@@ -7,11 +7,37 @@
   color: #edece7;
   padding: 7vw 7vw 14vw 7vw;
 }
+@media only screen and (min-width: 768px) {
+  #news {
+    background: #000;
+    color: #edece7;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 184px;
+  }
+}
 #news h2 {
   font-size: 6vw;
   font-weight: 600;
   line-height: 3.1;
   color: #edece7;
+}
+@media only screen and (min-width: 768px) {
+  #news h2 {
+    font-size: 18px;
+    width: 25%;
+    letter-spacing: 1.4px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #news ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+  }
 }
 #news ul li {
   margin-bottom: 7vw;
@@ -19,8 +45,24 @@
 #news ul li .left {
   margin-right: 6vw;
 }
-#news ul li .right p {
+@media only screen and (min-width: 768px) {
+  #news ul li .left {
+    margin-right: 0px;
+    width: 134%;
+  }
+}
+#news ul li .right {
   line-height: 1.4;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 768px) {
+  #news ul li {
+    margin-bottom: 0;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
 }
 #news .news-btn img {
   width: 42%;
@@ -28,14 +70,40 @@
 
 #takeout {
   padding-bottom: 60vw;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #takeout::after {
+    content: url("../img/index/takeout_img1.png");
+    position: absolute;
+    top: 0;
+    left: -105px;
+    z-index: -1;
+  }
 }
 #takeout h2 {
   margin-top: -8vw;
+}
+#takeout .wrap.pc {
+  padding-top: 220px;
+  margin: 0 auto;
+}
+#takeout .wrap.pc h2 {
+  text-align: right;
+  transform: translate(322px, 80px);
 }
 #takeout .takeout-txt {
   font-size: 4vw;
   line-height: 1.6;
   padding: 7vw 7%;
+}
+@media only screen and (min-width: 768px) {
+  #takeout .takeout-txt {
+    font-size: 16px;
+    color: #5b5a56;
+    padding: 113px 256px 0 0;
+    text-align: right;
+  }
 }
 #takeout .takeout-btn {
   padding: 0 7%;

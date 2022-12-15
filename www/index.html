@@ -147,19 +147,134 @@
     </div>
     <header id="header">
       <h1>
-        h１が入りま すh１が入りますh１が入ります <br />
+        h１が入りま すh１が入りますh１が入ります <br class="sp" />
         h１が入ります
       </h1>
       <p class="logo d-flex justify-center">
         <a href="index.html"><img src="./shared/img/index/logo.png" width="298" height="134" class="" alt="logo" /></a>
       </p>
       <div id="key">
-        <ul class="key-slide slide-fade">
+        <ul class="key-slide slide-fade stop">
           <li class="slide-img1"><img src="./shared/img/index/kv_img01.jpg" width="1499" height="900" alt="店内" /></li>
           <li class="slide-img2"><img src="./shared/img/index/kv_img02.jpg" width="1499" height="900" alt="焼鳥" /></li>
           <li class="slide-img3"><img src="./shared/img/index/kv_img03.jpg" width="1499" height="900" alt="一品" /></li>
         </ul>
       </div>
+
+
+      <div class="header-left-pc pc">
+        <p class="logo">
+          <a href="index.html" class="non-over"><img src="./shared/img/index/logo.png" alt="logo" /></a>
+        </p>
+        <p class="tel">
+          <a href="tel:080-3624-7811" class="telhref"
+            onClick="gtag('event','click',{'event_category':'tel','event_label':'header_phone'});"><img
+              src="./shared/img/index/header_tel.png" alt="__ALT_TEL__" /></a>
+        </p>
+        <div class="header-btn1">
+          <a href="#" target="_blank"
+            onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_reserve'});"><img
+              src="./shared/img/index/header_btn1.jpg" alt="WEB予約はこちら" /></a>
+        </div>
+        <div class="btn-takeout">
+          <a href="takeout.html" target="_blank">
+            <img src="./shared/img/index/header_btn2.jpg" alt="テイクアウトメニュー" />
+          </a>
+        </div>
+        <div class="btn-lunch">
+          <a class="btn-link" href="menu.html#lunch" target="_blank"> ランチ営業 </a>
+        </div>
+        <div class="btn-lunch">
+          <a class="btn unsmooth btn-link" href="#popup1">コロナ対策について </a>
+          <div class="remodal" data-remodal-id="popup1" role="dialog">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close">
+              <img src="./shared/img/shared/close.png" width="45" height="45" alt="close" />
+            </button>
+            <div id="popup1">
+              <span class="title">0新型コロナウイルス感染予防対策について</span>
+              <p class="sub-title">
+                いつもご愛顧いただき誠にありがとうございます。 <br />
+                当店では、下記の対策を行っています。
+              </p>
+              <div class="content-main">
+                <ul class="left">
+                  <li><span>店内アルコール消毒</span></li>
+                  <li><span>店内の換気</span></li>
+                  <li><span>店内に消毒アルコールの設置</span></li>
+                  <li><span>スタッフのマスク着用</span></li>
+                  <li><span>うがい手洗い徹底</span></li>
+                  <li><span>周りの方との距離の確保</span></li>
+                </ul>
+                <ul class="right">
+                  <li><span>お客様へのアルコール消毒と検温のお願い</span></li>
+                  <li><span>CO2センサーとアクリル板の設置</span></li>
+                  <li><span>空気ウイルス除去剤設置</span></li>
+                  <li><span>空気清浄機設置</span></li>
+                  <li><span>店内の人数制限</span></li>
+                </ul>
+              </div>
+              <p>今後も引き続き感染症対策に取り組みながら、</p>
+              <p>お客様とスタッフの健康と安全を第一に営業してまいります。</p>
+              <p>お客様にはご不便をおかけいたしますが、何卒ご理解、ご協力のほどお願い申し上げます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right-pc pc">
+        <ul class="list-menu-top d-flex">
+          <li>
+            <a href="#">求人情報</a>
+            <div class="text-box">
+              <a href="https://www.yakitori-sora-nagoya.com/owner.html"
+                onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_独立支援'});"
+                class="p1">独立支援者</a>
+              <a href="https://www.yakitori-sora-nagoya.com/recruit.html" class="p2"
+                onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_k求人'});">正社員/アルバイト</a>
+            </div>
+          </li>
+          <li><a href="index.html#floor">店内のご案内</a></li>
+          <li><a href="index.html#news">新着情報</a></li>
+          <li>
+            <a class="map" href=""><img src="./shared/img/index/location.png" alt="location" /><span
+                class="text-map">MAP</span></a>
+          </li>
+        </ul>
+
+
+        <div class="menu-social">
+          <ul class="social d-flex">
+            <li>
+              <a href="https://www.facebook.com/%E7%84%BC%E9%B3%A5-%E7%A9%BA%E5%BF%97%E8%B3%80%E6%9C%AC%E9%80%9A%E6%9C%AC%E5%BA%97-143641572905140/"
+                onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_fb'});" target="_blank">
+                <img src="./shared/img/index/icon-fb.png" alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yakitori_sora/?hl=ja"
+                onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_insta'});" target="_blank">
+                <img src="./shared/img/index/icon-instagram.png" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCYKx6i0YeyubO-aJ5LB1MSQ"
+                onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_youtube'});" target="_blank">
+                <img src="./shared/img/index/icon-youtube.png" alt="youtube" />
+              </a>
+            </li>
+          </ul>
+          <ul class="menu d-flex">
+            <li><a class="txt-vertical" href="index.html#access">店舗情報</a></li>
+            <li><a class="txt-vertical" href="takeout.html">テイクアウト</a></li>
+            <li><a class="txt-vertical" href="course.html">コース</a></li>
+            <li><a class="txt-vertical" href="scene.html">カウンターの愉しみ方</a></li>
+            <li><a class="txt-vertical" href="menu.html">焼鳥のお品書き</a></li>
+            <li><a class="txt-vertical" href="about.html">空の想い</a></li>
+            <li class="active"><a class="txt-vertical" href="index.html">ホーム</a></li>
+          </ul>
+        </div>
+      </div>
+
+
     </header>
     <!-- <div class="nav-fixed pc">
     <div class="wrap">
@@ -212,7 +327,9 @@
   </div> -->
     <section class="nav-target block">
       <div id="news">
-        <h2>空のお知らせ</h2>
+        <h2><span class="sp">空のお知らせ</span>
+          <a class="pc" href="#"><img src="./shared/img/index/news_btn1.jpg" alt="空のお知らせ"></a>
+        </h2>
         <ul>
           <li class="d-flex">
             <div class="left"><img src="./shared/img/index/news_img1.jpg" alt="" /></div>
@@ -229,15 +346,18 @@
             </div>
           </li>
         </ul>
-        <div class="text-right">
+        <div class="text-right sp">
           <a href="https://www.sora-imaike.com/fcblog/" class="news-btn">
             <img src="./shared/img/index/news_btn_sp.png" alt="button-more" />
           </a>
         </div>
       </div>
       <div id="takeout">
-        <p><img src="./shared/img/index/takeout_bg_sp.png" alt="串焼き" width="750" height="710" /></p>
-        <h2><img src="./shared/img/index/takeout_h2_sp.png" alt="TAKE OUT 空のテイクアウト" /></h2>
+        <p class="sp"><img src="./shared/img/index/takeout_bg_sp.png" alt="串焼き" width="750" height="710" /></p>
+        <h2 class="sp"><img src="./shared/img/index/takeout_h2_sp.png" alt="TAKE OUT 空のテイクアウト" /></h2>
+        <div class="wrap pc">
+          <h2><img src="./shared/img/index/takeout_h2_pc.png" width="694" height="139" alt="TAKE OUT 空のテイクアウト"></h2>
+        </div>
         <p class="takeout-txt">
           「焼鳥 空 今池店」では、自慢の焼鳥をテイ <br />クアウトでもご堪能いただけます。 <br />
           晩酌のおともはもちろん、食卓のおかずに <br />
@@ -472,7 +592,6 @@
 
   <script>
     let screen_width = screen.width
-    console.log(screen_width);
     function runOnMobile() {
       $(document).ready(function () {
         $(".floor-carousel").slick({

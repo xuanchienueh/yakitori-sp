@@ -7,20 +7,52 @@
   background: #000;
   color: $text-color;
   padding: 7vw 7vw 14vw 7vw;
+  @include pc {
+    background: #000;
+    color: #edece7;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 184px;
+  }
   h2 {
     font-size: 6vw;
     font-weight: 600;
     line-height: 3.1;
     color: $text-color;
+    @include pc {
+      font-size: 18px;
+      width: 25%;
+      letter-spacing: 1.4px;
+    }
   }
   ul {
+    @include pc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 30px;
+    }
     li {
       margin-bottom: 7vw;
       .left {
         margin-right: 6vw;
+        @include pc {
+          margin-right: 0px;
+          width: 134%;
+        }
       }
-      .right p {
+      .right {
         line-height: 1.4;
+        margin-left: 30px;
+      }
+      @include pc {
+        margin-bottom: 0;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
       }
     }
   }
@@ -33,14 +65,39 @@
 
 #takeout {
   padding-bottom: 60vw;
+  position: relative;
+  @include pc {
+    &::after {
+      content: url("../img/index/takeout_img1.png");
+      position: absolute;
+      top: 0;
+      left: -105px;
+      z-index: -1;
+    }
+  }
   h2 {
     margin-top: -8vw;
+  }
+  .wrap.pc {
+    padding-top: 220px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: right;
+      transform: translate(322px, 80px);
+    }
   }
   $padding-left-right: 7%;
   .takeout-txt {
     font-size: $fs-text;
     line-height: 1.6;
     padding: 7vw $padding-left-right;
+    @include pc {
+      font-size: 16px;
+      color: #5b5a56;
+      padding: 113px 256px 0 0;
+      text-align: right;
+    }
   }
   .takeout-btn {
     padding: 0 $padding-left-right;

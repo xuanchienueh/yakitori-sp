@@ -14,6 +14,19 @@ body {
   max-height: 100%;
   background-color: #edece7;
 }
+@media only screen and (min-width: 768px) {
+  body {
+    color: #000;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    background: #edece7;
+    min-width: inherit;
+    min-height: inherit;
+    max-height: 100%;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   body {
@@ -69,9 +82,19 @@ body.nav--opened #menu_toggle * {
   font-family: "Noto Serif JP", serif;
 }
 
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+@media only screen and (min-width: 768px) {
+  img {
+    max-width: auto;
+  }
 }
 
 .btn-link {
@@ -108,11 +131,26 @@ img {
 @media only screen and (min-width: 768px) {
   .btn-link {
     font-size: 25px;
+    background: transparent;
+    line-height: 2.2;
   }
   .btn-link:before {
-    width: 15px;
-    height: 18px;
-    right: 29px;
+    right: -1px;
+    width: 0;
+    height: 0;
+    top: 94%;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #edece7;
+    border-bottom: 0px solid transparent;
+  }
+  .btn-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    background: #fff;
   }
 }
 
@@ -122,6 +160,9 @@ img {
 
 .d-flex {
   display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
 }
 
 .d-block {
@@ -132,7 +173,8 @@ img {
   justify-content: center;
 }
 
-.align-item-center {
+.align-item-center,
+.align-items-center {
   align-items: center;
 }
 
@@ -152,6 +194,10 @@ img {
   color: #fff;
 }
 
+.fs18 {
+  font-size: 18px;
+}
+
 /*=============================================
  * main
  *=============================================*/
@@ -169,12 +215,30 @@ a[href^="tel:"]:hover {
   padding: 0 4%;
   position: relative;
 }
+@media only screen and (min-width: 768px) {
+  .wrap {
+    width: 1000px;
+  }
+}
+
+#header .header-fix-top {
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
 
 /*=============================================
  * header
  *=============================================*/
 header {
   background: #000;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    background: transparent;
+    height: 900px;
+  }
 }
 header h1 {
   color: #807974;
@@ -182,11 +246,27 @@ header h1 {
   line-height: 1.6;
   padding: 2vw 0 0 3.333%;
 }
+@media only screen and (min-width: 768px) {
+  header h1 {
+    position: absolute;
+    color: #807974;
+    font-size: 12px;
+    z-index: 1;
+    padding: 0;
+    top: 47px;
+    right: 32px;
+  }
+}
 header .logo {
   padding: 17vw 0;
 }
 header .logo a img {
   transform: scale(0.9) !important;
+}
+@media only screen and (min-width: 768px) {
+  header .logo {
+    padding: 40px 0;
+  }
 }
 header .key-slide {
   height: 100vw;
@@ -196,6 +276,149 @@ header .key-slide li img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (min-width: 768px) {
+  header .key-slide {
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+header .header-left-pc {
+  position: absolute;
+  left: 79px;
+  top: 29px;
+}
+header .header-left-pc .tel {
+  margin-top: 2px;
+  margin-bottom: 7px;
+  margin-left: 3px;
+}
+header .header-left-pc .btn-takeout {
+  margin-top: 23px;
+  margin-left: 2px;
+}
+header .header-left-pc .btn-lunch {
+  margin-top: 16px;
+}
+header .header-right-pc {
+  position: absolute;
+  right: 0px;
+  top: 16px;
+  width: 390px;
+}
+header .header-right-pc .list-menu-top {
+  color: #edece7;
+  position: relative;
+  top: -8px;
+  right: 23px;
+}
+header .header-right-pc .list-menu-top li {
+  margin-right: 15px;
+  position: relative;
+}
+header .header-right-pc .list-menu-top li .text-box {
+  display: none;
+  width: 160px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 2;
+  background: #fff;
+  transition: 0.5s;
+}
+header .header-right-pc .list-menu-top li .text-box > a {
+  height: 41px;
+  line-height: 41px;
+  padding-left: 8px;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background: #dddbd2;
+  display: block;
+  transition: all 0.5s;
+}
+header .header-right-pc .list-menu-top li .text-box > a:hover {
+  background: #fff;
+}
+header .header-right-pc .list-menu-top li .map {
+  width: 78px;
+  height: 31px;
+  display: flex;
+  border: 1px solid #edece7;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+}
+header .header-right-pc .list-menu-top li:nth-child(3) {
+  padding-left: 12px;
+}
+header .header-right-pc .list-menu-top li:first-child:hover .text-box {
+  display: block;
+}
+header .header-right-pc .menu-social {
+  position: absolute;
+  top: 243px;
+  right: 5px;
+  width: 100%;
+}
+header .header-right-pc .menu-social .social {
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 2px;
+  transform: translate(2px, -13px);
+}
+header .header-right-pc .menu-social .social li {
+  margin-left: 14px;
+}
+header .header-right-pc .menu-social .social li:last-child {
+  margin-right: 53px;
+}
+header .header-right-pc .menu-social .menu {
+  color: #edece7;
+  position: absolute;
+  top: 39px;
+  left: 11px;
+}
+header .header-right-pc .menu-social .menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 500%;
+  background: #fff;
+}
+header .header-right-pc .menu-social .menu li {
+  margin-right: 19px;
+  position: relative;
+  padding-top: 30px;
+  cursor: pointer;
+}
+header .header-right-pc .menu-social .menu li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 3px);
+  width: 5px;
+  height: 24px;
+  background-color: #edece7;
+  opacity: 0;
+}
+header .header-right-pc .menu-social .menu li.active::after {
+  opacity: 1;
+}
+header .header-right-pc .menu-social .menu li a {
+  font-size: 19px;
+  width: 100%;
+  height: 100%;
+  color: #edece7;
+  cursor: pointer;
+  letter-spacing: 2.9px;
 }
 
 /* menu toggle sp */
@@ -218,6 +441,11 @@ header .key-slide li img {
   font-size: 15px;
   color: #edece7;
   padding-bottom: 20vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu_toggle {
+    display: none;
+  }
 }
 #menu_toggle #social {
   margin-top: 5vw;
@@ -346,6 +574,11 @@ footer .nav-fixed #ft_fixed {
 footer .nav-fixed #ft_fixed li:first-child {
   margin-right: 1px;
 }
+@media only screen and (min-width: 768px) {
+  footer .nav-fixed #ft_fixed {
+    display: none;
+  }
+}
 
 /*=============================================
  * hamburger
@@ -361,6 +594,11 @@ footer .nav-fixed #ft_fixed li:first-child {
   border-radius: 5px;
   width: 50px;
   height: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .hamburger span {
