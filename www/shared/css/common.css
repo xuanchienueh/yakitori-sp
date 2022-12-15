@@ -159,8 +159,8 @@ a:hover img:not(.btn):not(.non-over),button:hover img{cursor:pointer;opacity:.8;
 /*=============================================
  * .nav-fixed
  *=============================================*/
-.nav-fixed{}
-.nav-fixed.fixed{}
+.nav-fixed{display: none;position: fixed;}
+.nav-fixed.fixed{display: block;}
 .nav-target{}
 .nav-pin{}
 .nav-pin.fixed{}
