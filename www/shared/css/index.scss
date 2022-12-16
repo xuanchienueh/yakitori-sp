@@ -67,11 +67,19 @@
   padding-bottom: 60vw;
   position: relative;
   @include pc {
+    padding-bottom: 50px;
     &::after {
       content: url("../img/index/takeout_img1.png");
       position: absolute;
       top: 0;
       left: -105px;
+      z-index: -1;
+    }
+    &::before {
+      content: url("../img/index/takeout_bg.jpg");
+      position: absolute;
+      left: -133px;
+      top: 458px;
       z-index: -1;
     }
   }
@@ -98,9 +106,25 @@
       padding: 113px 256px 0 0;
       text-align: right;
     }
+    span {
+      text-align: left;
+      display: inline-block;
+      line-height: 2;
+    }
   }
   .takeout-btn {
     padding: 0 $padding-left-right;
+    a {
+      @include pc {
+        padding: 44px 0;
+        display: inline-block;
+        margin-left: 143px;
+        transform: translateY(74px);
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -109,44 +133,89 @@
     background: #000 url("../img/index/read_bg_sp.jpg") no-repeat top center;
     background-size: 100% 45%;
     padding: 20vw 0;
+    @include pc {
+      background: #000 url("../img/index/read_bg.jpg") no-repeat top center;
+      padding: 30px 0;
+    }
     ul {
       margin-top: -46vw;
+      @include pc {
+        margin-top: -182px;
+        justify-content: flex-end;
+        margin-right: 125px;
+      }
       li {
         margin-right: 4px;
       }
       li:first-child {
         margin-top: -11vw;
+        @include pc {
+          margin-top: -89px;
+        }
       }
       li:nth-child(3) {
         margin-top: 11vw;
         margin-right: 0;
+        @include pc {
+          margin-top: 85px;
+        }
       }
     }
     h2 {
       padding-right: 7%;
+      @include pc {
+        padding: 36px 253px 0 0;
+      }
       img {
         width: 50%;
+        @include pc {
+          width: 20%;
+        }
       }
     }
     p {
       color: #c3c3c1;
       font-size: $fs-text;
       line-height: 1.666;
+      @include pc {
+        font-size: 16px;
+        width: 740px;
+        text-align: left;
+        margin-left: 147px;
+        line-height: 1.9;
+      }
     }
     .read-txt {
       padding: 0 7%;
       margin-top: 5vw;
-    }
-    p.p1 {
-      margin-bottom: 8vw;
-    }
-    p.p2 {
-      margin-bottom: 20vw;
-    }
-    .read-btn {
-      a {
-        margin-bottom: 15vw;
-        display: block;
+      p.p1 {
+        margin-bottom: 8vw;
+        @include pc {
+          margin-bottom: 34px;
+        }
+      }
+      p.p2 {
+        margin-bottom: 20vw;
+        @include pc {
+          margin-bottom: 74px;
+        }
+      }
+      .read-btn {
+        a {
+          margin-bottom: 15vw;
+          display: block;
+          @include pc {
+            margin-bottom: 50px;
+          }
+        }
+        @include pc {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 0 128px;
+        }
+      }
+      @include pc {
+        margin-top: -308px;
       }
     }
   }
@@ -154,19 +223,47 @@
 #scene {
   background: #000;
   padding-bottom: 20vw;
+  position: relative;
+  @include pc {
+    margin-top: -10px;
+    padding-bottom: 0;
+  }
+  h2 {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    z-index: 1;
+  }
   .scene-txt {
     padding: 0 7%;
     color: #c3c3c1;
+    @include pc {
+      width: 320px;
+      padding: 1px 0 0 0;
+      position: absolute;
+      right: 71px;
+      top: 264px;
+      z-index: 1;
+    }
     p {
       margin: 8vw 0;
+      @include pc {
+        margin-bottom: 40px;
+      }
     }
     .scene-btn-sp {
       margin: 20vw 0 10vw;
+      @include pc {
+        margin: 0px 19px 0px 30px;
+      }
     }
   }
   .bg-para {
     position: relative;
     height: 600px;
+    @include pc {
+      height: 890px;
+    }
   }
   .img-parallax {
     clip: rect(0, auto, auto, 0);
@@ -196,6 +293,9 @@
   padding-top: 33vw;
   padding-bottom: 28vw;
   position: relative;
+  @include pc {
+    padding: 0;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -205,31 +305,84 @@
     height: 50vw;
     background: url("../img/index/course_bg.png") no-repeat top center;
     background-size: 125% auto;
+    @include pc {
+      background-size: auto;
+      background-position: -133px top;
+    }
   }
-  h2 {
-    font-weight: 500;
-    .p1 {
-      font-size: 6.5vw;
-      line-height: 1.8;
-      span {
-        display: inline-block;
-        background: #000;
-        color: $text-color;
-        margin-left: -7%;
-        padding: 1vw 3%;
+  .wrap {
+    @include pc {
+      margin: 0 auto;
+      padding: 0 0;
+      position: relative;
+    }
+
+    .course-img {
+      @include pc {
+        // float: right;
+        // margin-top: 274px;
+        position: absolute;
+        right: -300px;
       }
     }
-    .p2 {
-      font-size: 5.5vw;
-      padding-left: 10%;
+    .course-content {
+      @include pc {
+        display: flex;
+        // justify-content: flex-end;
+        width: 440px;
+      }
+      h2 {
+        font-weight: 500;
+        .p1 {
+          font-size: 6.5vw;
+          line-height: 1.8;
+          @include pc {
+            font-size: 36px;
+            padding-top: 150px;
+            // transform: translateY(-227px);
+            // padding: 265px 2px 0 2px;
+          }
+          span {
+            display: inline-block;
+            background: #000;
+            color: $text-color;
+            margin-left: -7%;
+            padding: 1vw 3%;
+            @include pc {
+              // padding: 205px 2px 0 2px;
+              // margin-bottom: 9px;
+            }
+          }
+        }
+        .p2 {
+          font-size: 5.5vw;
+          padding-left: 10%;
+          @include pc {
+            font-size: 30px;
+            margin: 0 30px 0 0;
+            letter-spacing: 4.1px;
+            padding-left: 0;
+            // padding: 318px 0 0 0;
+          }
+        }
+      }
+      .course-txt {
+        color: #5b5a56;
+        margin: 8vw 0;
+        padding-right: 7%;
+        @include pc {
+          width: 282px;
+          margin: 0 0 0 32px;
+          padding: 220px 0 0 0;
+        }
+        .course-btn.pc {
+          margin-top: 40px;
+        }
+      }
     }
   }
-  .course-txt {
-    color: #5b5a56;
-    margin: 8vw 0;
-    padding-right: 7%;
-  }
-  .course-btn {
+
+  .course-btn.sp {
     margin-left: -7%;
     margin-top: 14vw;
     img {
@@ -297,16 +450,14 @@
     top: 0;
     width: calc(50% - 500px);
     height: 100%;
-    background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat
-      center left 40px;
+    background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
     border: none !important;
     text-indent: -9999px;
     z-index: 99;
     cursor: pointer;
     &.slick-prev {
       left: 0%;
-      background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat
-        center right 40px;
+      background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
     }
     &.slick-next {
       right: 0%;
@@ -314,8 +465,7 @@
   }
 }
 #acccess {
-  background: url("../img/index/access_bg_sp.jpg") no-repeat top center/100%
-    auto;
+  background: url("../img/index/access_bg_sp.jpg") no-repeat top center/100% auto;
   .logo {
     padding-top: 80vw;
     img {
@@ -380,8 +530,7 @@
         line-height: 1.7;
       }
       .access-txt-box {
-        background: url("../img/index/access_bg_txt_box.png") no-repeat top
-          center/100% auto;
+        background: url("../img/index/access_bg_txt_box.png") no-repeat top center/100% auto;
         padding-bottom: 8vw;
         font-weight: 600;
         h4 {

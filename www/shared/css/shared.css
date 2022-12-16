@@ -14,26 +14,17 @@ body {
   max-height: 100%;
   background-color: #edece7;
 }
-@media only screen and (min-width: 768px) {
-  body {
-    color: #000;
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 1px;
-    background: #edece7;
-    min-width: inherit;
-    min-height: inherit;
-    max-height: 100%;
-  }
-}
 
 @media only screen and (min-width: 768px) {
   body {
     font-size: 16px;
     line-height: 32px;
     letter-spacing: 1.1px;
-    background: url("../img/shared/bg.jpg") repeat top center;
+    color: #000;
+    font-family: "Noto Sans JP", sans-serif;
+    min-width: inherit;
+    min-height: inherit;
+    max-height: 100%;
   }
 }
 .nav--opened {
@@ -192,6 +183,20 @@ img {
 
 .text-white {
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .txt-vertical-pc {
+    cursor: vertical-text;
+    writing-mode: vertical-rl;
+    -o-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -moz-writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    text-orientation: upright;
+    word-wrap: break-word;
+  }
 }
 
 .fs18 {

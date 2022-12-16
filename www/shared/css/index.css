@@ -73,11 +73,21 @@
   position: relative;
 }
 @media only screen and (min-width: 768px) {
+  #takeout {
+    padding-bottom: 50px;
+  }
   #takeout::after {
     content: url("../img/index/takeout_img1.png");
     position: absolute;
     top: 0;
     left: -105px;
+    z-index: -1;
+  }
+  #takeout::before {
+    content: url("../img/index/takeout_bg.jpg");
+    position: absolute;
+    left: -133px;
+    top: 458px;
     z-index: -1;
   }
 }
@@ -105,8 +115,24 @@
     text-align: right;
   }
 }
+#takeout .takeout-txt span {
+  text-align: left;
+  display: inline-block;
+  line-height: 2;
+}
 #takeout .takeout-btn {
   padding: 0 7%;
+}
+@media only screen and (min-width: 768px) {
+  #takeout .takeout-btn a {
+    padding: 44px 0;
+    display: inline-block;
+    margin-left: 143px;
+    transform: translateY(74px);
+  }
+  #takeout .takeout-btn a img {
+    width: 100%;
+  }
 }
 
 #read .content {
@@ -114,8 +140,21 @@
   background-size: 100% 45%;
   padding: 20vw 0;
 }
+@media only screen and (min-width: 768px) {
+  #read .content {
+    background: #000 url("../img/index/read_bg.jpg") no-repeat top center;
+    padding: 30px 0;
+  }
+}
 #read .content ul {
   margin-top: -46vw;
+}
+@media only screen and (min-width: 768px) {
+  #read .content ul {
+    margin-top: -182px;
+    justify-content: flex-end;
+    margin-right: 125px;
+  }
 }
 #read .content ul li {
   margin-right: 4px;
@@ -123,53 +162,147 @@
 #read .content ul li:first-child {
   margin-top: -11vw;
 }
+@media only screen and (min-width: 768px) {
+  #read .content ul li:first-child {
+    margin-top: -89px;
+  }
+}
 #read .content ul li:nth-child(3) {
   margin-top: 11vw;
   margin-right: 0;
 }
+@media only screen and (min-width: 768px) {
+  #read .content ul li:nth-child(3) {
+    margin-top: 85px;
+  }
+}
 #read .content h2 {
   padding-right: 7%;
 }
+@media only screen and (min-width: 768px) {
+  #read .content h2 {
+    padding: 36px 253px 0 0;
+  }
+}
 #read .content h2 img {
   width: 50%;
+}
+@media only screen and (min-width: 768px) {
+  #read .content h2 img {
+    width: 20%;
+  }
 }
 #read .content p {
   color: #c3c3c1;
   font-size: 4vw;
   line-height: 1.666;
 }
+@media only screen and (min-width: 768px) {
+  #read .content p {
+    font-size: 16px;
+    width: 740px;
+    text-align: left;
+    margin-left: 147px;
+    line-height: 1.9;
+  }
+}
 #read .content .read-txt {
   padding: 0 7%;
   margin-top: 5vw;
 }
-#read .content p.p1 {
+#read .content .read-txt p.p1 {
   margin-bottom: 8vw;
 }
-#read .content p.p2 {
+@media only screen and (min-width: 768px) {
+  #read .content .read-txt p.p1 {
+    margin-bottom: 34px;
+  }
+}
+#read .content .read-txt p.p2 {
   margin-bottom: 20vw;
 }
-#read .content .read-btn a {
+@media only screen and (min-width: 768px) {
+  #read .content .read-txt p.p2 {
+    margin-bottom: 74px;
+  }
+}
+#read .content .read-txt .read-btn a {
   margin-bottom: 15vw;
   display: block;
+}
+@media only screen and (min-width: 768px) {
+  #read .content .read-txt .read-btn a {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #read .content .read-txt .read-btn {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 128px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #read .content .read-txt {
+    margin-top: -308px;
+  }
 }
 
 #scene {
   background: #000;
   padding-bottom: 20vw;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #scene {
+    margin-top: -10px;
+    padding-bottom: 0;
+  }
+}
+#scene h2 {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  z-index: 1;
 }
 #scene .scene-txt {
   padding: 0 7%;
   color: #c3c3c1;
 }
+@media only screen and (min-width: 768px) {
+  #scene .scene-txt {
+    width: 320px;
+    padding: 1px 0 0 0;
+    position: absolute;
+    right: 71px;
+    top: 264px;
+    z-index: 1;
+  }
+}
 #scene .scene-txt p {
   margin: 8vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #scene .scene-txt p {
+    margin-bottom: 40px;
+  }
 }
 #scene .scene-txt .scene-btn-sp {
   margin: 20vw 0 10vw;
 }
+@media only screen and (min-width: 768px) {
+  #scene .scene-txt .scene-btn-sp {
+    margin: 0px 19px 0px 30px;
+  }
+}
 #scene .bg-para {
   position: relative;
   height: 600px;
+}
+@media only screen and (min-width: 768px) {
+  #scene .bg-para {
+    height: 890px;
+  }
 }
 #scene .img-parallax {
   clip: rect(0, auto, auto, 0);
@@ -200,6 +333,11 @@
   padding-bottom: 28vw;
   position: relative;
 }
+@media only screen and (min-width: 768px) {
+  #course {
+    padding: 0;
+  }
+}
 #course::before {
   content: "";
   position: absolute;
@@ -210,34 +348,83 @@
   background: url("../img/index/course_bg.png") no-repeat top center;
   background-size: 125% auto;
 }
-#course h2 {
+@media only screen and (min-width: 768px) {
+  #course::before {
+    background-size: auto;
+    background-position: -133px top;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #course .wrap {
+    margin: 0 auto;
+    padding: 0 0;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #course .wrap .course-img {
+    position: absolute;
+    right: -300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #course .wrap .course-content {
+    display: flex;
+    width: 440px;
+  }
+}
+#course .wrap .course-content h2 {
   font-weight: 500;
 }
-#course h2 .p1 {
+#course .wrap .course-content h2 .p1 {
   font-size: 6.5vw;
   line-height: 1.8;
 }
-#course h2 .p1 span {
+@media only screen and (min-width: 768px) {
+  #course .wrap .course-content h2 .p1 {
+    font-size: 36px;
+    padding-top: 150px;
+  }
+}
+#course .wrap .course-content h2 .p1 span {
   display: inline-block;
   background: #000;
   color: #edece7;
   margin-left: -7%;
   padding: 1vw 3%;
 }
-#course h2 .p2 {
+#course .wrap .course-content h2 .p2 {
   font-size: 5.5vw;
   padding-left: 10%;
 }
-#course .course-txt {
+@media only screen and (min-width: 768px) {
+  #course .wrap .course-content h2 .p2 {
+    font-size: 30px;
+    margin: 0 30px 0 0;
+    letter-spacing: 4.1px;
+    padding-left: 0;
+  }
+}
+#course .wrap .course-content .course-txt {
   color: #5b5a56;
   margin: 8vw 0;
   padding-right: 7%;
 }
-#course .course-btn {
+@media only screen and (min-width: 768px) {
+  #course .wrap .course-content .course-txt {
+    width: 282px;
+    margin: 0 0 0 32px;
+    padding: 220px 0 0 0;
+  }
+}
+#course .wrap .course-content .course-txt .course-btn.pc {
+  margin-top: 40px;
+}
+#course .course-btn.sp {
   margin-left: -7%;
   margin-top: 14vw;
 }
-#course .course-btn img {
+#course .course-btn.sp img {
   width: 80%;
 }
 
