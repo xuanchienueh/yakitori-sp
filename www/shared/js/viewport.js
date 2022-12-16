@@ -1,6 +1,5 @@
 var baseW = 767; //break poiint setting add viewport
 var iOSviewportW = 0;
-var viewport = 1200;
 var ua = navigator.userAgent.toLowerCase();
 var isiOS =
   ua.indexOf("iphone") > -1 ||
