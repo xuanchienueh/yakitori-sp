@@ -5,7 +5,7 @@
 #news {
   background: #000;
   color: #edece7;
-  padding: 7vw 7vw 14vw 7vw;
+  padding: 7vw 0 14vw 0;
 }
 @media only screen and (min-width: 768px) {
   #news {
@@ -18,6 +18,12 @@
     padding: 0 184px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #news .wrap {
+    display: flex;
+    align-items: center;
+  }
+}
 #news h2 {
   font-size: 6vw;
   font-weight: 600;
@@ -27,7 +33,7 @@
 @media only screen and (min-width: 768px) {
   #news h2 {
     font-size: 18px;
-    width: 25%;
+    width: 50%;
     letter-spacing: 1.4px;
   }
 }
@@ -48,7 +54,7 @@
 }
 @media only screen and (min-width: 768px) {
   #news ul li .left {
-    margin-right: 0px;
+    margin-right: 15px;
     width: 134%;
   }
 }
@@ -59,7 +65,7 @@
 @media only screen and (min-width: 768px) {
   #news ul li {
     margin-bottom: 0;
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     padding-right: 40px;
@@ -77,13 +83,6 @@
   #takeout {
     padding-bottom: 50px;
   }
-  #takeout::after {
-    content: url("../img/index/takeout_img1.png");
-    position: absolute;
-    top: 0;
-    left: -105px;
-    z-index: -1;
-  }
   #takeout::before {
     content: url("../img/index/takeout_bg.jpg");
     position: absolute;
@@ -95,24 +94,36 @@
 #takeout h2 {
   margin-top: -8vw;
 }
-#takeout .wrap.pc {
-  padding-top: 220px;
+#takeout .wrap {
   margin: 0 auto;
+  position: relative;
 }
-#takeout .wrap.pc h2 {
+@media only screen and (min-width: 768px) {
+  #takeout .wrap {
+    padding-top: 220px;
+  }
+  #takeout .wrap::after {
+    content: url("../img/index/takeout_img1.png");
+    position: absolute;
+    top: 0;
+    left: -353px;
+    z-index: -1;
+  }
+}
+#takeout .wrap h2 {
   text-align: right;
-  transform: translate(322px, 80px);
+  transform: translate(256px, 80px);
 }
 #takeout .takeout-txt {
   font-size: 4vw;
   line-height: 1.6;
-  padding: 7vw 7%;
+  padding: 7vw 2%;
 }
 @media only screen and (min-width: 768px) {
   #takeout .takeout-txt {
     font-size: 16px;
     color: #5b5a56;
-    padding: 113px 256px 0 0;
+    padding: 113px 0 0 0;
     text-align: right;
   }
 }
@@ -122,13 +133,13 @@
   line-height: 2;
 }
 #takeout .takeout-btn {
-  padding: 0 7%;
+  padding: 0;
 }
 @media only screen and (min-width: 768px) {
   #takeout .takeout-btn a {
     padding: 44px 0;
     display: inline-block;
-    margin-left: 143px;
+    margin-left: 0;
     transform: translateY(74px);
   }
   #takeout .takeout-btn a img {
