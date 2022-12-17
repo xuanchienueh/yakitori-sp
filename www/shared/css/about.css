@@ -1,0 +1,304 @@
+/* Scss Document */
+body {
+  background: #edede8;
+  letter-spacing: 1px;
+}
+
+#lead {
+  background: url("../img/about/lead_bg.jpg") no-repeat top center;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+#lead .content h2 {
+  font-size: 56px;
+  line-height: 84px;
+  margin-bottom: 75px;
+}
+#lead .content p {
+  color: #e3e3e3;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+#ingredients .ingredients1 {
+  padding-top: 92px;
+  padding-bottom: 118px;
+  position: relative;
+}
+#ingredients .ingredients1::after {
+  content: url("../img/about/ingredients_bg.png");
+  position: absolute;
+  left: -200px;
+  top: 0;
+  z-index: -1;
+}
+#ingredients .ingredients1::before {
+  position: absolute;
+  content: url("../img/about/ingredients_img3.png");
+  right: -100px;
+  top: -36px;
+}
+#ingredients .ingredients1 .ingredients_img1 {
+  margin-bottom: 65px;
+}
+#ingredients .ingredients1 .content {
+  margin-left: 70px;
+}
+#ingredients .ingredients1 .content .ingredients_img2 {
+  margin-bottom: 20px;
+}
+#ingredients .ingredients1 .text {
+  color: #5b5a56;
+}
+#ingredients .ingredients2 {
+  padding-bottom: 170px;
+}
+#ingredients .ingredients2 img.ingredients-img4 {
+  margin-bottom: 50px;
+}
+#ingredients .ingredients2 .content .left {
+  padding-right: 20px;
+  width: 303px;
+}
+#ingredients .ingredients2 .content .right {
+  padding-left: 44px;
+  width: 623px;
+  border-left: 2px solid #5b5a56;
+}
+#ingredients .ingredients2 .content .right p {
+  color: #5b5a56;
+  text-align: left;
+}
+
+#quality {
+  padding: 60px 0 9px 0;
+  background: #e3e1db;
+}
+#quality .wrap {
+  position: relative;
+}
+#quality .wrap::after {
+  content: url("../img/about/quality_deco_top.png");
+  position: absolute;
+  top: -162px;
+  left: -400px;
+}
+#quality .wrap::before {
+  content: url("../img/about/quality_deco_bottom.png");
+  position: absolute;
+  bottom: -117px;
+  right: -425px;
+  z-index: 1;
+}
+#quality .wrap .left {
+  margin-right: 30px;
+}
+#quality .wrap .left img {
+  margin-bottom: 50px;
+}
+#quality .wrap .left p.txt {
+  color: #5b5a56;
+}
+#quality .wrap .right {
+  position: relative;
+  transform: translateY(-175px);
+}
+#quality .wrap .right::after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 200%;
+  top: 300px;
+  height: 375px;
+  background: url("../img/about/quality_bg.png") no-repeat top center;
+  background-size: contain;
+}
+#quality .wrap .right .quality-h2 {
+  margin-bottom: 58px;
+}
+
+#flow {
+  background: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#flow .wrap {
+  position: relative;
+}
+#flow .wrap .content1 {
+  position: relative;
+}
+#flow .wrap .content1::after {
+  content: url("../img/about/flow_bg_top.png");
+  position: absolute;
+  left: 355px;
+  top: 123px;
+}
+#flow .wrap .content1 .flow-h2 {
+  margin-left: 108px;
+  margin-right: 117px;
+}
+#flow .wrap .content1 p {
+  color: #e3e3e3;
+}
+#flow .wrap .flow-slide {
+  margin-top: 88px;
+  text-align: center;
+  padding-left: 40px;
+  position: relative;
+}
+#flow .wrap .flow-slide::after {
+  content: url("../img/about/flow_h_1.png");
+  position: absolute;
+  top: -200px;
+  right: 105px;
+}
+#flow .wrap .flow-slide .slick-dots {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 99;
+  padding: 0px 0 15px;
+}
+#flow .wrap .flow-slide .slick-dots li {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+#flow .wrap .flow-slide .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  background: #ab5010;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+#flow .wrap .flow-slide .slick-dots li.slick-active button {
+  background: #f97619;
+}
+#flow .wrap .flow-slide .slick-arrow {
+  position: absolute;
+  top: 0;
+  width: calc(50% - 500px);
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
+  border: none !important;
+  text-indent: -9999px;
+  z-index: 99;
+  cursor: pointer;
+}
+#flow .wrap .flow-slide .slick-arrow.slick-prev {
+  left: 0%;
+  background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
+}
+#flow .wrap .flow-slide .slick-arrow.slick-next {
+  right: 0%;
+}
+#flow #flow2 {
+  margin-top: 100px;
+  padding-bottom: 430px;
+  position: relative;
+}
+#flow #flow2::after {
+  content: "";
+  position: absolute;
+  right: -100px;
+  left: -100px;
+  bottom: 0;
+  height: 100%;
+  background: url("../img/about/flow_bg.png") no-repeat bottom center;
+}
+#flow #flow2::before {
+  content: url("../img/about/flow_h_2.png");
+  position: absolute;
+  top: -78px;
+  left: 245px;
+  z-index: 1;
+}
+#flow #flow2 .d-flex {
+  display: flex;
+  justify-content: space-around;
+}
+#flow #flow2 .d-flex .flow-text2 {
+  color: #e3e3e3;
+  display: flex;
+  align-items: flex-end;
+}
+#flow #flow2 .d-flex .flow-h-3 {
+  align-self: center;
+  transform: translateY(50px);
+}
+#flow #flow3 {
+  padding-top: 30px;
+  position: relative;
+}
+#flow #flow3::after {
+  content: url("../img/about/flow_h_5.png");
+  position: absolute;
+  left: 352px;
+  top: 115px;
+}
+#flow #flow3 .flow-h-4 {
+  margin-bottom: 70px;
+}
+#flow #flow3 .content .left {
+  margin-right: 55px;
+}
+#flow #flow3 .flow-text3 {
+  color: #e3e3e3;
+  padding-left: 50px;
+  margin-top: 60px;
+}
+
+#sake .left {
+  background: #ecece8;
+  padding: 250px 1px 45px 65px;
+  width: 510px;
+  position: relative;
+}
+#sake .left::after {
+  content: url("../img/about/sake_img2.png");
+  position: absolute;
+  left: 187px;
+  top: 50px;
+}
+#sake .left .text {
+  margin-top: 45px;
+  margin-bottom: 64px;
+}
+#sake .left a.text-center {
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  display: inline-block;
+  position: relative;
+  padding: 0 65px;
+  margin: 0 auto;
+}
+#sake .left a.text-center::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+#sake .left a.text-center::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid black;
+  border-bottom: 0px solid transparent;
+}
+#sake .right {
+  background: url("../img/about/sake_img1.jpg") no-repeat top center;
+  background-size: cover;
+  width: calc(100% - 510px);
+}/*# sourceMappingURL=about.css.map */
