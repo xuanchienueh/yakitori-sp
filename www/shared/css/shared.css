@@ -8,7 +8,7 @@ body {
   line-height: 1.8;
   color: #000;
   letter-spacing: 0.1em;
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Noto Serif JP", serif;
   min-width: inherit;
   min-height: inherit;
   max-height: 100%;
@@ -300,8 +300,8 @@ header h1 {
     font-size: 12px;
     z-index: 1;
     padding: 0;
-    top: 47px;
-    right: 32px;
+    top: 55px;
+    right: 25px;
   }
 }
 header .logo {
@@ -336,7 +336,7 @@ header .key-slide li img {
 header .header-left-pc {
   position: absolute;
   left: 79px;
-  top: 29px;
+  top: 43px;
 }
 header .header-left-pc .tel {
   margin-top: 2px;
@@ -353,7 +353,7 @@ header .header-left-pc .btn-lunch {
 header .header-right-pc {
   position: absolute;
   right: 0px;
-  top: 16px;
+  top: 26px;
   width: 390px;
 }
 header .header-right-pc .list-menu-top {

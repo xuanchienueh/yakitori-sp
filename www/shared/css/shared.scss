@@ -8,9 +8,8 @@ body {
   line-height: 1.8;
   color: #000;
   letter-spacing: 0.1em;
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro",
-    "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック",
-    "MS PGothic", sans-serif;
+  font-family: "Noto Serif JP", serif;
+
   min-width: inherit;
   min-height: inherit;
   max-height: 100%;
@@ -57,19 +56,13 @@ body.nav--opened #menu_toggle * {
  * fonts - DON'T EDIT
  *=============================================*/
 .fnt-mincho {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
-    "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .fnt-meiryo {
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴシックPro", "ＭＳ ゴシック",
-    "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴシックPro", "ＭＳ ゴシック", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 .fnt-gothic {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro",
-    "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック",
-    "MS PGothic", sans-serif;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 .fnt-notosr {
   font-family: "Noto Serif JP", serif;
@@ -94,9 +87,7 @@ img {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
-    "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 4vw;
   letter-spacing: 0;
   line-height: 3.2;
@@ -282,11 +273,10 @@ header {
       position: absolute;
       color: #807974;
       font-size: 12px;
-
       z-index: 1;
       padding: 0;
-      top: 47px;
-      right: 32px;
+      top: 55px;
+      right: 25px;
     }
   }
   .logo {
@@ -320,7 +310,7 @@ header {
   .header-left-pc {
     position: absolute;
     left: 79px;
-    top: 29px;
+    top: 43px;
     .tel {
       margin-top: 2px;
       margin-bottom: 7px;
@@ -337,7 +327,7 @@ header {
   .header-right-pc {
     position: absolute;
     right: 0px;
-    top: 16px;
+    top: 26px;
     width: 390px;
     .list-menu-top {
       color: #edece7;
@@ -838,8 +828,7 @@ footer {
 }
 .hamburger span:after {
   bottom: -9px;
-  transition: bottom 0.075s 0.12s ease,
-    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger.is-active span {
   transform: rotate(45deg);

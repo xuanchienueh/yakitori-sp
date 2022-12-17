@@ -82,13 +82,7 @@
 @media only screen and (min-width: 768px) {
   #takeout {
     padding-bottom: 50px;
-  }
-  #takeout::before {
-    content: url("../img/index/takeout_bg.jpg");
-    position: absolute;
-    left: -133px;
-    top: 458px;
-    z-index: -1;
+    background: url("../img/index/takeout_bg.jpg") no-repeat bottom center;
   }
 }
 #takeout h2 {
@@ -147,15 +141,21 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #read {
+    background: #000 url("../img/index/read_bg.jpg") no-repeat top center;
+  }
+}
 #read .content {
   background: #000 url("../img/index/read_bg_sp.jpg") no-repeat top center;
   background-size: 100% 45%;
   padding: 20vw 0;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   #read .content {
-    background: #000 url("../img/index/read_bg.jpg") no-repeat top center;
-    padding: 30px 0;
+    background: unset;
+    padding: 0;
   }
 }
 #read .content ul {
@@ -163,13 +163,12 @@
 }
 @media only screen and (min-width: 768px) {
   #read .content ul {
-    margin-top: -182px;
-    justify-content: flex-end;
-    margin-right: 125px;
+    justify-content: space-between;
+    width: 795px;
+    position: absolute;
+    margin-top: -161px;
+    right: -129px;
   }
-}
-#read .content ul li {
-  margin-right: 4px;
 }
 #read .content ul li:first-child {
   margin-top: -11vw;
@@ -193,7 +192,10 @@
 }
 @media only screen and (min-width: 768px) {
   #read .content h2 {
-    padding: 36px 253px 0 0;
+    padding: 0;
+    position: absolute;
+    top: 350px;
+    right: 0;
   }
 }
 #read .content h2 img {
@@ -201,7 +203,7 @@
 }
 @media only screen and (min-width: 768px) {
   #read .content h2 img {
-    width: 20%;
+    width: 100%;
   }
 }
 #read .content p {
@@ -214,13 +216,18 @@
     font-size: 16px;
     width: 740px;
     text-align: left;
-    margin-left: 147px;
     line-height: 1.9;
   }
 }
 #read .content .read-txt {
   padding: 0 7%;
   margin-top: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #read .content .read-txt {
+    padding: 670px 0 0 0;
+    margin-top: 0;
+  }
 }
 #read .content .read-txt p.p1 {
   margin-bottom: 8vw;
@@ -252,11 +259,6 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0 128px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #read .content .read-txt {
-    margin-top: -308px;
   }
 }
 
@@ -340,7 +342,6 @@
 }
 
 #course {
-  padding-left: 7%;
   padding-top: 33vw;
   padding-bottom: 28vw;
   position: relative;
@@ -372,19 +373,26 @@
     margin: 0 auto;
     padding: 0 0;
     position: relative;
+    display: flex;
   }
+}
+#course .wrap .course-img {
+  margin-right: -7%;
 }
 @media only screen and (min-width: 768px) {
   #course .wrap .course-img {
     position: absolute;
     right: -256px;
     top: 220px;
+    order: 2;
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 768px) {
   #course .wrap .course-content {
     display: flex;
     width: 440px;
+    order: 1;
   }
 }
 #course .wrap .course-content h2 {
@@ -399,7 +407,7 @@
 #course .wrap .course-content h2 .p1 {
   font-size: 6.5vw;
   line-height: 1.8;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 768px) {
   #course .wrap .course-content h2 .p1 {
@@ -411,17 +419,30 @@
   display: inline-block;
   background: #000;
   color: #edece7;
-  margin-left: -7%;
-  padding: 1vw 3%;
+  padding: 0 1% 0 0;
+  position: relative;
+}
+#course .wrap .course-content h2 .p1 span::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  left: -50%;
+  width: 59%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 @media only screen and (min-width: 768px) {
   #course .wrap .course-content h2 .p1 span {
     padding: 193px 0px 0 0px;
   }
+  #course .wrap .course-content h2 .p1 span:after {
+    display: none;
+  }
 }
 #course .wrap .course-content h2 .p2 {
   font-size: 5.5vw;
-  padding-left: 10%;
+  padding-left: 16%;
 }
 @media only screen and (min-width: 768px) {
   #course .wrap .course-content h2 .p2 {
@@ -455,7 +476,7 @@
 }
 
 #floor {
-  padding: 30vw 7% 10vw;
+  padding: 30vw 7% 27vw;
   background: url("../img/index/floor_bg_sp1.png") no-repeat top center;
   background-size: 100%;
   position: relative;
@@ -472,7 +493,7 @@
   left: 0;
   width: 50vw;
   top: 33vw;
-  height: calc(100% - 33vw);
+  height: calc(100% - 56vw);
   background: #e0ded7;
   z-index: -1;
 }
@@ -480,6 +501,17 @@
   #floor::after {
     display: none;
   }
+}
+#floor .content .right-pc {
+  margin-bottom: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #floor .content .right-pc {
+    margin-bottom: 0;
+  }
+}
+#floor .content .right-pc .floor-img3 img {
+  width: 80%;
 }
 @media only screen and (min-width: 768px) {
   #floor .content {
@@ -598,7 +630,6 @@
 @media only screen and (min-width: 768px) {
   #acccess .bg-full-width-pc {
     background: url("../img/index/access_bg.jpg") no-repeat top center/cover;
-    height: 1000px;
     position: relative;
   }
   #acccess .bg-full-width-pc::after {
@@ -660,11 +691,13 @@
 @media only screen and (min-width: 768px) {
   #acccess .access-tel {
     width: 808px;
+    height: 136px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     position: relative;
+    gap: 0 20px;
   }
 }
 #acccess .access-tel a {
@@ -680,12 +713,11 @@
   }
 }
 #acccess .access-tel .access-tel-img {
-  width: 80%;
   padding: 6vw 0;
 }
 @media only screen and (min-width: 768px) {
   #acccess .access-tel .access-tel-img {
-    width: 64%;
+    width: 60%;
     padding: 0 0;
   }
 }
@@ -707,26 +739,27 @@
   #acccess .access-content .left {
     width: 593px;
     margin-top: 0;
+    padding-right: 24px;
   }
 }
 #acccess .access-content .left dl {
   color: #5b5a56;
   font-size: 4vw;
   margin-bottom: 4vw;
+  line-height: 1.4;
 }
 @media only screen and (min-width: 768px) {
   #acccess .access-content .left dl {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 }
 #acccess .access-content .left dl dt {
   width: 30%;
-  margin-right: 3%;
 }
 @media only screen and (min-width: 768px) {
   #acccess .access-content .left dl dt {
-    width: 92px;
+    width: 110px;
   }
 }
 #acccess .access-content .left dl dd {
@@ -734,7 +767,7 @@
 }
 @media only screen and (min-width: 768px) {
   #acccess .access-content .left dl dd {
-    width: auto;
+    width: calc(100% - 110px);
     line-height: 1.7;
   }
 }
@@ -749,10 +782,14 @@
     padding-bottom: 0px;
   }
 }
+#acccess .access-content .right {
+  margin-top: 12vw;
+}
 @media only screen and (min-width: 768px) {
   #acccess .access-content .right {
     font-size: 20px;
     width: 400px;
+    margin-top: 0;
   }
 }
 #acccess .access-content .right h3 {
@@ -772,6 +809,7 @@
   padding-top: 4vw;
   font-size: 4vw;
   line-height: 1.7;
+  letter-spacing: 0.9px;
 }
 @media only screen and (min-width: 768px) {
   #acccess .access-content .right .access-right-text1 {
@@ -782,7 +820,7 @@
   }
 }
 #acccess .access-content .right .access-txt-box {
-  background: url("../img/index/access_bg_txt_box.png") no-repeat top center/100% auto;
+  background: url("../img/index/access_bg_txt_box.png") no-repeat top center/100% 100%;
   padding-bottom: 8vw;
   font-weight: 600;
 }
@@ -801,7 +839,7 @@
 @media only screen and (min-width: 768px) {
   #acccess .access-content .right .access-txt-box h4 {
     font-size: 28px;
-    padding: 55px 0 25px;
+    padding: 55px 0 14px;
   }
 }
 #acccess .access-content .right .access-txt-box .access-right-text2 {
@@ -816,14 +854,14 @@
 }
 #acccess .access-content .right .access-txt-box .access-btn-right {
   color: #edece7;
-  padding: 3vw 0;
+  padding: 3vw 0 0;
   font-size: 4.67vw;
   font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
   #acccess .access-content .right .access-txt-box .access-btn-right {
     font-size: 20px;
-    padding: 6px 0 20px 0;
+    padding: 18px 0 6px 0;
     justify-content: flex-end;
     margin-right: 22px;
   }
