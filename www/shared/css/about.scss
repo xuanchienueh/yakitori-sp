@@ -10,6 +10,7 @@ body {
   padding-top: 130px;
   padding-bottom: 150px;
   .content {
+    padding-left: 90px;
     h2 {
       font-size: 56px;
       line-height: 84px;
@@ -189,14 +190,14 @@ body {
         top: 0;
         width: calc(50% - 500px);
         height: 100%;
-        background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
+        background: rgba(255, 255, 255, 0.3);
         border: none !important;
         text-indent: -9999px;
         z-index: 99;
         cursor: pointer;
         &.slick-prev {
           left: 0%;
-          background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
+          background: rgba(255, 255, 255, 0.3);
         }
         &.slick-next {
           right: 0%;

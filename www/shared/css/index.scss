@@ -553,14 +553,12 @@
     top: 0;
     width: calc(50% - 500px);
     height: 100%;
-    // background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
     border: none !important;
     text-indent: -9999px;
     z-index: 99;
     cursor: pointer;
     &.slick-prev {
       left: 0%;
-      // background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
     }
     &.slick-next {
       right: 0%;
