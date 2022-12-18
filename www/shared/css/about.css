@@ -4,70 +4,163 @@ body {
   letter-spacing: 1px;
 }
 
-#lead {
-  background: url("../img/about/lead_bg.jpg") no-repeat top center;
+@media only screen and (min-width: 768px) {
+  #lead {
+    background-image: url("../img/about/lead_bg.jpg");
+    background-position: top center;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    background-size: cover;
+    height: auto;
+  }
+}
+#lead .lead-bg-sp {
+  height: 275px;
+  background-image: url("../img/about/lead_bg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 130px;
-  padding-bottom: 150px;
+  background-position: right center;
 }
 #lead .content {
-  padding-left: 90px;
+  background: #000;
+  padding: 11vw 6%;
+}
+@media only screen and (min-width: 768px) {
+  #lead .content {
+    padding: 0 0 0 90px;
+    background: unset;
+  }
 }
 #lead .content h2 {
-  font-size: 56px;
-  line-height: 84px;
-  margin-bottom: 75px;
+  text-align: center;
+  font-size: 6vw;
+  margin-bottom: 3vw;
+}
+@media only screen and (min-width: 768px) {
+  #lead .content h2 {
+    text-align: left;
+    font-size: 56px;
+    line-height: 84px;
+    margin-bottom: 75px;
+  }
 }
 #lead .content p {
   color: #e3e3e3;
-  line-height: 32px;
   letter-spacing: 1px;
 }
+@media only screen and (min-width: 768px) {
+  #lead .content p {
+    line-height: 32px;
+  }
+}
 
+#ingredients {
+  padding-top: 12vw;
+  padding-bottom: 43vw;
+}
+@media only screen and (min-width: 768px) {
+  #ingredients {
+    padding: 0;
+  }
+}
 #ingredients .ingredients1 {
-  padding-top: 92px;
-  padding-bottom: 118px;
   position: relative;
+  padding: 0 6%;
 }
-#ingredients .ingredients1::after {
-  content: url("../img/about/ingredients_bg.png");
-  position: absolute;
-  left: -200px;
-  top: 0;
-  z-index: -1;
-}
-#ingredients .ingredients1::before {
-  position: absolute;
-  content: url("../img/about/ingredients_img3.png");
-  right: -100px;
-  top: -36px;
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients1 {
+    padding-top: 92px;
+    padding-bottom: 118px;
+  }
+  #ingredients .ingredients1::after {
+    content: url("../img/about/ingredients_bg.png");
+    position: absolute;
+    left: -200px;
+    top: 0;
+    z-index: -1;
+  }
+  #ingredients .ingredients1::before {
+    position: absolute;
+    content: url("../img/about/ingredients_img3.png");
+    right: -100px;
+    top: -36px;
+  }
 }
 #ingredients .ingredients1 .ingredients_img1 {
-  margin-bottom: 65px;
+  margin-bottom: 9vw;
 }
-#ingredients .ingredients1 .content {
-  margin-left: 70px;
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients1 .ingredients_img1 {
+    margin-bottom: 65px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients1 .content {
+    margin-left: 70px;
+  }
 }
 #ingredients .ingredients1 .content .ingredients_img2 {
-  margin-bottom: 20px;
+  margin-bottom: 3vw;
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients1 .content .ingredients_img2 {
+    margin-bottom: 0;
+  }
+}
+#ingredients .ingredients1 .content .ingredients_img2 img {
+  width: 85%;
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients1 .content .ingredients_img2 {
+    margin-bottom: 20px;
+  }
 }
 #ingredients .ingredients1 .text {
   color: #5b5a56;
 }
 #ingredients .ingredients2 {
-  padding-bottom: 170px;
+  margin-top: 12vw;
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients2 {
+    padding-bottom: 170px;
+    margin-top: 0;
+  }
 }
 #ingredients .ingredients2 img.ingredients-img4 {
   margin-bottom: 50px;
 }
-#ingredients .ingredients2 .content .left {
-  padding-right: 20px;
-  width: 303px;
+#ingredients .ingredients2 .content {
+  display: block;
 }
-#ingredients .ingredients2 .content .right {
-  padding-left: 44px;
-  width: 623px;
-  border-left: 2px solid #5b5a56;
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients2 .content {
+    display: flex;
+  }
+}
+#ingredients .ingredients2 .content .left {
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients2 .content .left {
+    padding-right: 20px;
+    width: 303px;
+  }
+}
+#ingredients .ingredients2 .content .left img {
+  width: 55%;
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients2 .content .left img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #ingredients .ingredients2 .content .right {
+    padding-left: 44px;
+    width: 650px;
+    border-left: 2px solid #5b5a56;
+  }
 }
 #ingredients .ingredients2 .content .right p {
   color: #5b5a56;
