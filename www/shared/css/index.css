@@ -48,6 +48,15 @@
 #news ul li {
   margin-bottom: 7vw;
 }
+@media only screen and (min-width: 768px) {
+  #news ul li {
+    margin-bottom: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+}
 #news ul li .left {
   margin-right: 5%;
   width: 76%;
@@ -61,15 +70,6 @@
 #news ul li .right {
   line-height: 1.4;
   margin-left: -1%;
-}
-@media only screen and (min-width: 768px) {
-  #news ul li {
-    margin-bottom: 0;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding-right: 40px;
-  }
 }
 #news .news-btn img {
   width: 42%;

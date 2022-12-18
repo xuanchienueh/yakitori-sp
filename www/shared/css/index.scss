@@ -43,6 +43,13 @@
     }
     li {
       margin-bottom: 7vw;
+      @include pc {
+        margin-bottom: 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+      }
       .left {
         margin-right: 5%;
         width: 76%;
@@ -54,13 +61,6 @@
       .right {
         line-height: 1.4;
         margin-left: -1%;
-      }
-      @include pc {
-        margin-bottom: 0;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        padding-right: 40px;
       }
     }
   }
@@ -136,7 +136,6 @@
 #read {
   @include pc {
     background: #000 url("../img/index/read_bg.jpg") no-repeat top center;
-    // padding: 30px 0;
   }
   .content {
     background: #000 url("../img/index/read_bg_sp.jpg") no-repeat top center;
@@ -155,9 +154,6 @@
         position: absolute;
         margin-top: -161px;
         right: -129px;
-      }
-      li {
-        // margin-right: 4px;
       }
       li:first-child {
         margin-top: -11vw;

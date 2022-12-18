@@ -629,11 +629,21 @@ header .header-right-pc .menu-social .menu li a {
   padding: 35px 7%;
   background: #f5f4f0;
 }
+@media only screen and (min-width: 768px) {
+  .remodal {
+    padding: 80px 0;
+  }
+}
 .remodal .remodal-close {
   background: transparent;
 }
 .remodal .remodal-close img {
   width: 55%;
+}
+@media only screen and (min-width: 768px) {
+  .remodal .remodal-close img {
+    width: 80%;
+  }
 }
 .remodal #popup-covid h2 {
   border-bottom: 1px solid #000;
@@ -642,10 +652,34 @@ header .header-right-pc .menu-social .menu li a {
   line-height: 1.4;
   padding-bottom: 2vw;
 }
+@media only screen and (min-width: 768px) {
+  .remodal #popup-covid h2 {
+    font-size: 28px;
+    line-height: 45px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+  }
+}
 .remodal #popup-covid .sub-title {
   padding: 5vw 0;
   color: #5b5a56;
   font-size: 4vw;
+}
+@media only screen and (min-width: 768px) {
+  .remodal #popup-covid .sub-title {
+    font-size: 16px;
+    line-height: 32px;
+    padding: 38px 0 36px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .remodal #popup-covid .content-main {
+    display: flex;
+    width: 575px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 .remodal #popup-covid .content-main li {
   list-style: square;
@@ -658,6 +692,12 @@ header .header-right-pc .menu-social .menu li a {
 .remodal #popup-covid .popup-content {
   text-align: left;
   margin-top: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  .remodal #popup-covid .popup-content {
+    margin-top: 36px;
+    text-align: center;
+  }
 }
 
 /*=============================================

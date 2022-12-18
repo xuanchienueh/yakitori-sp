@@ -603,10 +603,16 @@ header {
 .remodal {
   padding: 35px 7%;
   background: #f5f4f0;
+  @include pc {
+    padding: 80px 0;
+  }
   .remodal-close {
     background: transparent;
     img {
       width: 55%;
+      @include pc {
+        width: 80%;
+      }
     }
   }
   #popup-covid {
@@ -616,13 +622,31 @@ header {
       font-size: 6.4vw;
       line-height: 1.4;
       padding-bottom: 2vw;
+      @include pc {
+        font-size: 28px;
+        line-height: 45px;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #000;
+        display: inline-block;
+      }
     }
     .sub-title {
       padding: 5vw 0;
       color: #5b5a56;
       font-size: $fs-text;
+      @include pc {
+        font-size: 16px;
+        line-height: 32px;
+        padding: 38px 0 36px;
+      }
     }
     .content-main {
+      @include pc {
+        display: flex;
+        width: 575px;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
       li {
         list-style: square;
         color: #ad1515;
@@ -635,6 +659,10 @@ header {
     .popup-content {
       text-align: left;
       margin-top: 6vw;
+      @include pc {
+        margin-top: 36px;
+        text-align: center;
+      }
     }
   }
 }
