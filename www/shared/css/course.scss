@@ -23,6 +23,9 @@
     h2 {
       text-align: center;
       @include pc {
+        margin-left: 27px;
+      }
+      @include pc {
         order: 2;
       }
       img {
@@ -94,9 +97,9 @@
     color: white;
     @include pc {
       font-size: 36px;
-      line-height: 1.7;
+      line-height: 1.9;
       padding: 0 20px;
-      margin-bottom: 57px;
+      margin-bottom: 40px;
     }
   }
   .set1 {
@@ -106,7 +109,7 @@
       &::before {
         content: url("../img/course/course_deco2.png");
         position: absolute;
-        top: 190px;
+        top: 136px;
         left: 460px;
         z-index: -1;
       }
@@ -119,7 +122,7 @@
       @include pc {
         display: block;
         padding: 0 0;
-        margin: -180px 0 0 -150px;
+        margin: -226px 0 0 -150px;
         p:first-child {
           margin-bottom: 20px;
         }
@@ -128,7 +131,7 @@
     .right {
       @include pc {
         width: 453px;
-        margin: 55px 0 0 40px;
+        margin: 0px 44px 0 1px;
       }
       h2 {
         margin-top: 2vw;
@@ -150,7 +153,7 @@
   .wrap {
     @include pc {
       display: flex;
-      gap: 0 40px;
+      justify-content: space-between;
       margin-top: 70px;
     }
     .set-item {
@@ -160,11 +163,11 @@
       @include pc {
         margin: 0 0 0 0;
         padding: 76px 24px;
-        width: 504px;
+        width: 498px;
         .list {
           display: flex;
           justify-content: space-between;
-          padding: 0 45px;
+          padding: 0 37px;
         }
       }
     }
@@ -172,6 +175,16 @@
       @include pc {
         margin: 0 0;
       }
+    }
+    .set3 {
+      @include pc {
+        margin-right: -39px;
+      }
+    }
+  }
+  .set2-set3 {
+    @include pc {
+      margin: 75px 228px 0;
     }
   }
   .course-tel {
@@ -181,14 +194,14 @@
     border: 2px solid #000;
     @include pc {
       padding: 60px 0 44px;
-      width: 741px;
+      width: 744px;
       height: 340px;
-      margin: 80px auto;
+      margin: 87px auto 79px;
     }
     .tel {
       margin-bottom: 6vw;
       @include pc {
-        margin-bottom: 44px;
+        margin-bottom: 43px;
       }
     }
   }
@@ -197,7 +210,7 @@
   background: #000;
   padding-bottom: 8vw;
   @include pc {
-    padding-bottom: 50px;
+    padding-bottom: 84px;
   }
   h2 {
     @include pc {
@@ -216,34 +229,47 @@
     .resever-img1 {
       @include pc {
         position: relative;
-        top: -45px;
+        top: -52px;
+        left: -50px;
+        width: 1100px;
       }
     }
     .resever1-txt {
       margin: 6vw 0 9vw;
       @include pc {
-        margin: 0 0 0 0;
         width: 580px;
         background: #000;
         position: relative;
         z-index: 1;
-        margin: -170px 0 0 auto;
-        padding: 68px 56px;
+        margin: -164px -50px 0 auto;
+        padding: 58px 56px 81px;
       }
     }
   }
   .reserve2 {
+    position: relative;
     @include pc {
       display: flex;
       align-items: center;
+      &::after {
+        content: url("../img/course/reserve_deco.png");
+        position: absolute;
+        z-index: 0;
+        left: 386px;
+        top: 50px;
+      }
     }
     .reserve-slide {
-      width: 571px;
+      @include pc {
+        position: relative;
+        z-index: 1;
+        width: 571px;
+      }
     }
     .reserve2-txt {
       @include pc {
         width: 375px;
-        margin-left: 62px;
+        margin: -23px 0 0 62px;
       }
       h3 {
         color: #edece7;
@@ -251,7 +277,7 @@
         margin-bottom: 2vw;
         @include pc {
           font-size: 36px;
-          margin: 0 0 34px 0;
+          margin: 0 0 24px 0;
           font-weight: 600;
           letter-spacing: 4.4px;
         }
@@ -261,7 +287,7 @@
   .resever-btn {
     margin: 9vw 0;
     @include pc {
-      margin: 80px 0 0 0;
+      margin: 76px 0 0 0;
     }
     a {
       display: inline-block;
