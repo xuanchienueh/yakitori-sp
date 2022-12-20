@@ -3,6 +3,11 @@
 * body
 *=============================================*/
 @import "global.scss";
+body {
+  @include pc {
+    background: url("../img/takeout/bg.jpg") repeat top center;
+  }
+}
 #lead {
   padding: 12vw 0;
   @include pc {
@@ -99,6 +104,10 @@
       right: 0;
       height: 25vw;
       background: url("../img/takeout/menu_deco1.png") no-repeat top center;
+      background-size: 100%;
+      @include pc {
+        height: 200px;
+      }
     }
     &::after {
       content: "";
@@ -109,15 +118,21 @@
       right: 0;
       height: 25vw;
       background: url("../img/takeout/menu_deco2.png") no-repeat bottom center;
+      background-size: 100%;
+      @include pc {
+        bottom: -2px;
+        height: 200px;
+      }
     }
     @include pc {
-      margin: -200px 0 0 0;
+      margin: -141px 0 0 0;
     }
     img {
       height: 100vw;
       object-fit: cover;
       @include pc {
         height: auto;
+        width: 100%;
       }
     }
   }
@@ -152,7 +167,7 @@
           margin: 4vw 0 5vw 0;
           @include pc {
             font-size: 26px;
-            margin: 0 0 auto 0;
+            margin: 42px 28px auto 0;
           }
         }
         .menu-description {
@@ -162,6 +177,7 @@
             margin: 0 0 0 0;
             padding: 0 0 0 0;
             width: 336px;
+            transform: translateY(-19px);
           }
         }
       }
@@ -184,7 +200,10 @@
           margin: 4vw 0 5vw 0;
           @include pc {
             font-size: 26px;
-            margin: 0 0 0 0;
+            margin: 63px -4px 0 3px;
+          }
+          .price {
+            margin-bottom: 21px;
           }
         }
         .menu-description {
@@ -209,14 +228,14 @@
         .price {
           font-size: 36px;
           line-height: 32px;
-          margin-bottom: 18px;
+          margin-bottom: 9px;
         }
       }
     }
     #menu3 {
       margin-top: 16vw;
       @include pc {
-        margin: 70px 0 0px 0;
+        margin: 101px 0 0px 0;
       }
       h2 {
         padding: 0 9% 4vw;
@@ -231,7 +250,7 @@
         text-align: center;
         margin-bottom: 3vw;
         @include pc {
-          margin: 0 0 65px 0;
+          margin: 0 0 46px 0;
         }
       }
       .menu3-content {
@@ -248,7 +267,7 @@
             @include pc {
               font-size: 22px;
               line-height: 32px;
-              margin-bottom: 20px;
+              margin-bottom: 13px;
             }
           }
           dl {
@@ -258,11 +277,226 @@
             padding-bottom: 1.5vw;
             margin-bottom: 6vw;
             @include pc {
-              padding: 0 0 4px 0;
-              margin: 0 0 16px 0;
+              padding: 0 0 8px 0;
+              margin: 0 0 11px 0;
             }
           }
         }
+      }
+    }
+  }
+}
+
+#flow {
+  @include pc {
+    margin-top: -12px;
+    margin-bottom: 82px;
+  }
+
+  #flow1 {
+    background: url("../img/takeout/flow_bg1.jpg");
+    padding: 12vw 6% 1vw 6%;
+    margin-bottom: 6vw;
+    @include pc {
+      padding: 80px 100px 55px 100px;
+      margin: 0 -50px 26px -50px;
+    }
+    h2 {
+      margin: 0 auto 6vw auto;
+      width: 80%;
+      @include pc {
+        width: auto;
+        margin: 0px 0 35px 0;
+      }
+    }
+    .flow1-content {
+      @include pc {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        padding: 53px 0 45px;
+      }
+      .item {
+        margin: 0 0 6vw 0;
+        padding: 6vw 2% 0 2%;
+        border-top: 2px solid #000;
+        @include pc {
+          margin: 0;
+          padding: 0 0 0 0;
+          border-top: 0px solid #000;
+        }
+      }
+      .left {
+        @include pc {
+          margin: 0 110px 0 0;
+        }
+        .flow-tel {
+          width: 80%;
+          margin: 0 auto;
+          @include pc {
+            width: auto;
+            margin: -2px -32px 0 7px;
+          }
+        }
+        h3 {
+          margin: 6vw 0;
+          @include pc {
+            margin: 24px 0 24px 0;
+            font-size: 20px;
+            line-height: 45px;
+            letter-spacing: 2px;
+          }
+        }
+        .p1 {
+          margin: 0 0 6vw;
+          @include pc {
+            margin: -19px 0 16px 0;
+          }
+        }
+      }
+      .right {
+        @include pc {
+        }
+        h3 {
+          font-weight: 600;
+          margin: 0 0 5vw;
+          @include pc {
+            margin: -12px 16px 27px 0;
+            font-size: 30px;
+            line-height: 44px;
+          }
+        }
+        .txt {
+          margin: 0 0 6vw;
+          @include pc {
+            margin: 0 0 0 0;
+          }
+        }
+        .flow1-btn {
+          @include pc {
+            margin: 36px 6px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  #flow2 {
+    background: url("../img/takeout/flow_bg2.jpg");
+    padding: 12vw 6% 10vw 6%;
+    margin-top: 6vw;
+    @include pc {
+      padding: 85px 100px 58px 100px;
+      margin: 29px -50px 0 -50px;
+    }
+    h3 {
+      font-size: 7vw;
+      font-weight: 600;
+      margin: 0 0 4vw;
+      @include pc {
+        font-size: 45px;
+        margin: -11px 0 31px 0;
+        line-height: 47px;
+        letter-spacing: 7px;
+      }
+    }
+    .sub-h3 {
+      margin: 6vw 0;
+      @include pc {
+        margin: 0 auto 0 auto;
+        width: 510px;
+      }
+    }
+    .flow2-content {
+      @include pc {
+        padding: 50px 0 58px;
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+        margin-top: 29px;
+      }
+      .item {
+        border-top: 2px solid #000;
+        padding: 6vw 0;
+        @include pc {
+          border-top: 0px solid #000;
+          padding: 0 0 0 0;
+        }
+      }
+      .left {
+        @include pc {
+          margin-left: -50px;
+        }
+        h4 {
+          margin: 0 0 6vw;
+        }
+        .sub-h4 {
+        }
+        h5 {
+          margin: 3vw 0;
+          @include pc {
+            margin: 20px 0 11px 0;
+          }
+        }
+      }
+      .right {
+        @include pc {
+          margin: 0 -50px 0 0;
+        }
+        h4 {
+          margin: 0 0 2vw;
+        }
+      }
+      .left h4,
+      .right h4 {
+        font-size: 6vw;
+        @include pc {
+          font-size: 30px;
+          margin: -5px 5px 36px 0;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+  .flow {
+    .flow-content {
+      @include pc {
+        display: flex;
+      }
+      .item {
+        @include pc {
+          width: 500px;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+        }
+      }
+    }
+  }
+  #flow3 {
+    background: #000;
+    padding: 6vw 5%;
+    margin: 14vw 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      border: 1px solid #fff;
+    }
+    @include pc {
+      width: 802px;
+      padding: 75px 137px 61px;
+      margin: 82px auto 0 auto;
+    }
+    h3 {
+      width: 80%;
+      margin: 0 auto 4vw auto;
+      @include pc {
+        width: auto;
+        margin: 0 auto 21px auto;
       }
     }
   }

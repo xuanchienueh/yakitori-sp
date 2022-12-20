@@ -243,12 +243,23 @@ a[href^="tel:"]:hover {
         li {
           margin-right: 20px;
         }
+        li.map {
+          padding: 0 12px;
+          border: 1px solid #fff;
+        }
       }
     }
     .nav-fl {
-      color: #fff;
+      color: #67665f;
       a {
         cursor: pointer;
+        margin-left: 52px;
+        &:hover {
+          color: #fff;
+        }
+      }
+      a.active {
+        color: #fff;
       }
     }
   }
@@ -494,7 +505,6 @@ header {
   @include pc {
     position: fixed;
     top: 0;
-    border-bottom: 2px solid #fff;
   }
 }
 .nav-fixed.right.pc {

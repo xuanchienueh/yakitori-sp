@@ -14,9 +14,9 @@
     <title>__TITLE__</title>
 
     <!-- Social Share - Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:locale" content="ja_JP" />
-    <meta property="og:url" content="http://www.*****.com/" />
+    <meta property="og:url" content="http://www.*****.com/takeout.html" />
     <meta property="og:image" content="http://www.*****.com/shared/img/shared/ogp.png" />
     <meta property="og:title" content="__TITLE__" />
     <meta property="og:site_name" content="__TITLE__" />
@@ -36,7 +36,7 @@
     <script src="shared/js/viewport.js"></script>
 
     <!-- Profiles -->
-    <link rel="canonical" href="http://www.*****.com/" />
+    <link rel="canonical" href="http://www.*****.com/takeout.html" />
     <link rel="profile" href="http://microformats.org/profile/hcard" />
     <link rel="apple-touch-icon" href="shared/img/shared/apple-touch-icon.png" />
     <link rel="shortcut icon" href="shared/img/shared/favicon.ico" />
@@ -47,19 +47,12 @@
     <link rel="stylesheet" href="shared/css/slick.min.css" />
     <link rel="stylesheet" href="shared/css/remodal.css" />
     <link rel="stylesheet" href="shared/css/shared.css" />
-    <link rel="stylesheet" href="shared/css/index.css" />
     <link rel="stylesheet" href="./shared/css/takeout.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- style scss -->
-    <!-- <link rel="stylesheet" href="./shared/css/global.scss" />
-    <link rel="stylesheet" href="./shared/css/shared.scss" />
-    <link rel="stylesheet" href="./shared/css/index.scss" />
-    <link rel="stylesheet" href="./shared/css/takeout.scss" /> -->
   </head>
 
   <body>
@@ -184,7 +177,7 @@
                 </li>
                 <li><a href="index.html#floor">店内のご案内</a></li>
                 <li><a href="index.html#news">新着情報</a></li>
-                <li>
+                <li class="map">
                   <a class="map" href="#"><img src="./shared/img/index/location.png" width="20" height="20" alt="icon-map" /> <span>MAP</span></a>
                 </li>
               </ul>
@@ -193,12 +186,12 @@
               </div>
             </div>
             <nav class="nav-fl">
-              <a class="active" href="index.html">ホーム</a>
+              <a href="index.html">ホーム</a>
               <a href="about.html">空の想い</a>
               <a href="menu.html">焼鳥のお品書き</a>
               <a href="scene.html">カウンターの愉しみ方</a>
               <a href="course.html">コース</a>
-              <a href="takeout.html">テイクアウト</a>
+              <a class="active" href="takeout.html">テイクアウト</a>
               <a href="index.html#access">店舗情報</a>
             </nav>
           </div>
@@ -305,7 +298,7 @@
                 <a href="https://soraimaike.base.shop/" target="_blank"><img src="./shared/img/takeout/lead_btn.jpg" width="346" height="70" alt="WEB事前決済" /></a>
               </div>
               <p class="lead-tel">
-                <img src="./shared/img/takeout/lead_tel.png" width="390" height="85" alt="080-3624-7811" />
+                <a href="#" onClick="gtag('event','click',{'event_category':'tel','event_label':'info_phone'});"><img src="./shared/img/takeout/lead_tel.png" width="390" height="85" alt="080-3624-7811" /></a>
               </p>
             </div>
           </div>
@@ -377,23 +370,78 @@
         </div>
         <div id="flow">
           <div class="wrap">
-            <div id="flow1">
-              <h2><img src="./shared/img/takeout/flow_h2.png" width="437" height="183" alt="お電話 or WEBサイトからご注文ください。" /></h2>
-              <div class="flow1-content">
-                <div class="left">
-                  <div class="flow-tel"><img src="./shared/img/takeout/flow_tel.png" width="382" height="81" alt="080-3624-7811" /></div>
-                  <h3>【以下の内容をお伺いいたします】</h3>
-                  <p class="p1">・お名前 ・電話番号 <br />・商品名×個数 ・ご希望日時 <br /></p>
-                  <p class="p2">ホームページを見たとお伝えいただけるとスムーズです。</p>
+            <div id="flow1" class="flow">
+              <h2 class="text-center"><img src="./shared/img/takeout/flow_h2.png" width="437" height="183" alt="お電話 or WEBサイトからご注文ください。" /></h2>
+              <div class="flow1-content flow-content">
+                <div class="left item">
+                  <div class="flow-tel">
+                    <a href="#" onClick="gtag('event','click',{'event_category':'tel','event_label':'info_phone'});"><img src="./shared/img/takeout/flow_tel.png" width="382" height="81" alt="080-3624-7811" /></a>
+                  </div>
+                  <h3 class="text-center">【以下の内容をお伺いいたします】</h3>
+                  <p class="p1 text-center">・お名前 ・電話番号 <br />・商品名×個数 ・ご希望日時 <br /></p>
+                  <p class="p2 text-center">ホームページを見たと<br class="pc" />お伝えいただけるとスムーズです。</p>
                 </div>
-                <div class="right">
+                <div class="right item text-center">
                   <h3>WEBの場合</h3>
-                  <p>下記の専用サイトからご予約をお願いいたします。 サイト内で事前決済が可能ですので、 商品のお受け取りがスムーズです。</p>
+                  <p class="txt">
+                    下記の専用サイトから<br />
+                    ご予約をお願いいたします。<br />
+                    サイト内で事前決済が可能ですので、<br />
+                    商品のお受け取りがスムーズです。
+                  </p>
                   <div class="flow1-btn">
                     <a href="https://soraimaike.base.shop/" target="_blank"><img src="./shared/img/takeout/flow_btn.jpg" width="346" height="71" alt="WEB事前決済" /></a>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="arrow text-center">
+              <img src="./shared/img/takeout/flow_arrow.png" width="47" height="24" alt="arrow" />
+            </div>
+            <div id="flow2" class="text-center flow">
+              <h3 class="text-center">受け取りについて</h3>
+              <p class="sub-h3">
+                お電話でご注文の場合も、専用WEBサイトからご注文の場合も、 商品は店頭でのお渡しのみとなります。<br />
+                配送は承っておりませんので、予めご了承ください。
+              </p>
+              <div class="flow2-content flow-content">
+                <div class="left item">
+                  <h4>お電話の場合</h4>
+                  <p class="sub-h4">
+                    お電話でご注文の場合、店頭での商品 <br class="pc" />
+                    受け渡しの際にお支払いもお願いしております。
+                  </p>
+                  <h5>【お支払い方法】</h5>
+                  <p class="text-center">
+                    ・現金 <br />
+                    ・クレジットカード <br />
+                    （VISA,Master,JCB,AMEX,Diners） <br />
+                    ・電子マネー <br />
+                    （PayPay,LINE Pay,QUICPay, <br />
+                    iD,Alipay,Apple Pay, <br />
+                    d払い,au PAY,交通系ICカード）
+                  </p>
+                </div>
+                <div class="right item">
+                  <h4>WEBの場合</h4>
+                  <p class="text-center">
+                    サイト内にて決済が<br />
+                    完了しておりますので、<br />
+                    当日お店にお越しいただき、<br />
+                    店頭で商品をお受け取りください。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="flow3" class="text-center">
+              <h3><img src="./shared/img/takeout/flow_h3_white.png" width="355" height="29" alt="キャンセルについて" /></h3>
+              <p class="text-white">
+                キャンセルは前日までにお願いいたします。<br class="pc" />
+                当日のキャンセルは、料理代金を100％頂戴する場合がございます。<br class="pc" />
+                尚、WEB予約の場合は事前決済となるため、決済方法によっては<br class="pc" />
+                キャンセルをお受けすることができません。<br class="pc" />
+                ご理解のほどよろしくお願いいたします。
+              </p>
             </div>
           </div>
         </div>
@@ -494,10 +542,10 @@
     <script src="shared/js/slick.js"></script>
     <!--<script src="shared/js/ScrollMagic.min.js"></script> -->
     <script type="text/javascript" src="shared/js/remodal.js"></script>
-    <script type="text/javascript" src="shared/js/infiniteslidev2.js"></script>
+    <!-- <script type="text/javascript" src="shared/js/infiniteslidev2.js"></script> -->
     <script src="shared/js/common.js"></script>
     <script src="shared/js/shared.js"></script>
-    <script src="shared/js/jquery.rss.js"></script>
+    <!-- <script src="shared/js/jquery.rss.js"></script> -->
 
     <script></script>
   </body>

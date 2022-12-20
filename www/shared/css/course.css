@@ -59,23 +59,23 @@
   }
 }
 
-#section-course {
+#course {
   color: #5b5a56;
   padding-bottom: 12vw;
 }
 @media only screen and (min-width: 768px) {
-  #section-course {
+  #course {
     padding-bottom: 0;
   }
-  #section-course ul li {
+  #course ul li {
     line-height: 50px;
   }
 }
-#section-course .bg-para {
+#course .bg-para {
   position: relative;
   height: 600px;
 }
-#section-course .bg-para .img-parallax {
+#course .bg-para .img-parallax {
   clip: rect(0, auto, auto, 0);
   margin-bottom: 0;
   height: 100%;
@@ -84,7 +84,7 @@
   left: 0;
   right: 0;
 }
-#section-course .bg-para .img-parallax img {
+#course .bg-para .img-parallax img {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -97,13 +97,13 @@
   z-index: 0;
   transform: translateZ(0);
 }
-#section-course .bg-para .course-deco {
+#course .bg-para .course-deco {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-#section-course .h2-course {
+#course .h2-course {
   text-align: center;
   background: #000;
   padding: 2vw 0;
@@ -111,21 +111,21 @@
   color: white;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .h2-course {
+  #course .h2-course {
     font-size: 36px;
     line-height: 1.9;
     padding: 0 20px;
     margin-bottom: 40px;
   }
 }
-#section-course .set1 {
+#course .set1 {
   position: relative;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .set1 {
+  #course .set1 {
     display: flex;
   }
-  #section-course .set1::before {
+  #course .set1::before {
     content: url("../img/course/course_deco2.png");
     position: absolute;
     top: 136px;
@@ -133,104 +133,104 @@
     z-index: -1;
   }
 }
-#section-course .set1 .left {
+#course .set1 .left {
   display: flex;
   gap: 0 3vw;
   padding: 3vw 0;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .set1 .left {
+  #course .set1 .left {
     display: block;
     padding: 0 0;
     margin: -226px 0 0 -150px;
   }
-  #section-course .set1 .left p:first-child {
+  #course .set1 .left p:first-child {
     margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #section-course .set1 .right {
+  #course .set1 .right {
     width: 453px;
     margin: 0px 44px 0 1px;
   }
 }
-#section-course .set1 .right h2 {
+#course .set1 .right h2 {
   margin-top: 2vw;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .set1 .right h2 {
+  #course .set1 .right h2 {
     margin-top: 0;
     text-align: center;
   }
 }
-#section-course .set1 .right .set1-content {
+#course .set1 .right .set1-content {
   padding: 6vw 0 6vw;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .set1 .right .set1-content {
+  #course .set1 .right .set1-content {
     padding: 0 0 0;
     display: flex;
     justify-content: space-evenly;
   }
 }
 @media only screen and (min-width: 768px) {
-  #section-course .wrap {
+  #course .wrap {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
   }
 }
-#section-course .wrap .set-item {
+#course .wrap .set-item {
   margin: 0 0 6vw 0;
   background: url("../img/course/course_bg_set.jpg");
   padding: 9vw 4%;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .wrap .set-item {
+  #course .wrap .set-item {
     margin: 0 0 0 0;
     padding: 76px 24px;
     width: 498px;
   }
-  #section-course .wrap .set-item .list {
+  #course .wrap .set-item .list {
     display: flex;
     justify-content: space-between;
     padding: 0 37px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #section-course .wrap .set2 {
+  #course .wrap .set2 {
     margin: 0 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  #section-course .wrap .set3 {
+  #course .wrap .set3 {
     margin-right: -39px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #section-course .set2-set3 {
-    margin: 75px 228px 0;
+  #course .set2-set3 {
+    margin: 75px auto 0;
   }
 }
-#section-course .course-tel {
+#course .course-tel {
   text-align: center;
   margin: 0 6%;
   padding: 10vw 6% 6vw;
   border: 2px solid #000;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .course-tel {
+  #course .course-tel {
     padding: 60px 0 44px;
     width: 744px;
     height: 340px;
     margin: 87px auto 79px;
   }
 }
-#section-course .course-tel .tel {
+#course .course-tel .tel {
   margin-bottom: 6vw;
 }
 @media only screen and (min-width: 768px) {
-  #section-course .course-tel .tel {
+  #course .course-tel .tel {
     margin-bottom: 43px;
   }
 }

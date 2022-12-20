@@ -267,11 +267,22 @@ a[href^="tel:"]:hover {
   #header .header-fix-top .list-menu-top li {
     margin-right: 20px;
   }
+  #header .header-fix-top .list-menu-top li.map {
+    padding: 0 12px;
+    border: 1px solid #fff;
+  }
   #header .nav-fl {
-    color: #fff;
+    color: #67665f;
   }
   #header .nav-fl a {
     cursor: pointer;
+    margin-left: 52px;
+  }
+  #header .nav-fl a:hover {
+    color: #fff;
+  }
+  #header .nav-fl a.active {
+    color: #fff;
   }
 }
 
@@ -513,7 +524,6 @@ header .header-right-pc .menu-social .menu li a {
   .nav-fixed.fixed.pc {
     position: fixed;
     top: 0;
-    border-bottom: 2px solid #fff;
   }
 }
 

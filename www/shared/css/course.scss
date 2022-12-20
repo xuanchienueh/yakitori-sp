@@ -49,7 +49,7 @@
   }
 }
 
-#section-course {
+#course {
   color: #5b5a56;
   padding-bottom: 12vw;
   @include pc {
@@ -184,7 +184,7 @@
   }
   .set2-set3 {
     @include pc {
-      margin: 75px 228px 0;
+      margin: 75px auto 0;
     }
   }
   .course-tel {
