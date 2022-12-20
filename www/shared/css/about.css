@@ -9,7 +9,7 @@ body {
     background-image: url("../img/about/lead_bg.jpg");
     background-position: top center;
     padding-top: 130px;
-    padding-bottom: 150px;
+    padding-bottom: 146px;
     background-size: cover;
     height: auto;
   }
@@ -39,9 +39,9 @@ body {
 @media only screen and (min-width: 768px) {
   #lead .content h2 {
     text-align: left;
-    font-size: 56px;
-    line-height: 84px;
-    margin-bottom: 75px;
+    font-size: 52px;
+    line-height: 57px;
+    margin-bottom: 64px;
   }
 }
 #lead .content p {
@@ -72,20 +72,19 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients1 {
-    padding-top: 92px;
-    padding-bottom: 118px;
+    padding: 95px 3px 107px;
   }
   #ingredients .ingredients1::after {
     content: url("../img/about/ingredients_bg.png");
     position: absolute;
-    left: -200px;
-    top: 0;
+    left: -194px;
+    top: 31px;
     z-index: -1;
   }
   #ingredients .ingredients1::before {
     position: absolute;
     content: url("../img/about/ingredients_img3.png");
-    right: -100px;
+    right: -117px;
     top: -36px;
   }
 }
@@ -94,7 +93,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients1 .ingredients_h2 {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -107,16 +106,11 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients1 .content .ingredients_img2 {
-    margin-bottom: 0;
+    margin-bottom: 25px;
   }
 }
 #ingredients .ingredients1 .content .ingredients_img2 img {
-  width: 85%;
-}
-@media only screen and (min-width: 768px) {
-  #ingredients .ingredients1 .content .ingredients_img2 {
-    margin-bottom: 20px;
-  }
+  width: 58%;
 }
 #ingredients .ingredients1 .text {
   color: #5b5a56;
@@ -156,8 +150,9 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients2 .content .left {
-    padding-right: 20px;
-    width: 303px;
+    width: 282px;
+    margin: 0 51px 0 0;
+    transform: translate(20px, 13px);
   }
 }
 #ingredients .ingredients2 .content .left img {
@@ -170,7 +165,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients2 .content .right {
-    padding-left: 44px;
+    padding-left: 49px;
     width: 650px;
     border-left: 2px solid #5b5a56;
   }
@@ -187,7 +182,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #quality {
-    padding: 60px 0 9px 0;
+    padding: 70px 0 0px 0;
     background-color: #e3e1db;
     background-image: unset;
   }
@@ -214,7 +209,7 @@ body {
   #quality .wrap::before {
     content: url("../img/about/quality_bg.png");
     position: absolute;
-    top: 143px;
+    top: 124px;
     right: -447px;
     z-index: 1;
   }
@@ -268,7 +263,7 @@ body {
   #quality .wrap .right {
     position: absolute;
     right: 30px;
-    top: 424px;
+    top: 364px;
     z-index: 1;
   }
 }
@@ -299,13 +294,13 @@ body {
 @media only screen and (min-width: 768px) {
   #flow {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 113px;
     background-image: unset;
   }
 }
 @media only screen and (min-width: 768px) {
   #flow .deco-top {
-    height: 100px;
+    height: 93px;
     margin-top: -100px;
     position: relative;
   }
@@ -344,7 +339,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #flow .wrap .content1 p {
-    margin-top: 0;
+    margin-top: -56px;
   }
 }
 #flow .wrap .flow-slide-wrap p.sp {
@@ -363,17 +358,18 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #flow .wrap .flow-slide-wrap .flow-slide {
-    margin-top: 88px;
+    margin-top: 82px;
     padding-left: 40px;
   }
   #flow .wrap .flow-slide-wrap .flow-slide::after {
     content: url("../img/about/flow_h_1.png");
     position: absolute;
-    top: -200px;
-    right: 105px;
+    top: -198px;
+    right: 85px;
   }
   #flow .wrap .flow-slide-wrap .flow-slide .slide-item img {
     width: 1000px;
+    height: 600px;
   }
 }
 #flow .wrap .flow-slide-wrap .flow-slide .slick-dots {
@@ -450,8 +446,8 @@ body {
   #flow #flow2::before {
     content: url("../img/about/flow_h_2.png");
     position: absolute;
-    top: -78px;
-    left: 245px;
+    top: -87px;
+    left: 239px;
     z-index: 1;
   }
 }
@@ -485,7 +481,7 @@ body {
     display: flex;
     align-items: flex-end;
     order: unset;
-    margin-top: 0;
+    margin: 0 0 0 28px;
   }
 }
 #flow #flow2 .d-flex .flow-h-3 {
@@ -496,7 +492,7 @@ body {
 @media only screen and (min-width: 768px) {
   #flow #flow2 .d-flex .flow-h-3 {
     align-self: center;
-    transform: translateY(50px);
+    transform: translate(-11px, 57px);
     position: unset;
     text-align: unset;
   }
@@ -517,7 +513,7 @@ body {
 @media only screen and (min-width: 768px) {
   #flow #flow2 .d-flex .flow-img4 {
     width: auto;
-    margin: 0;
+    margin: -11px 20px 0 0;
     order: unset;
   }
 }
@@ -526,13 +522,13 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #flow #flow3 {
-    padding-top: 30px;
+    padding-top: 8px;
   }
   #flow #flow3::after {
     content: url("../img/about/flow_h_5.png");
     position: absolute;
-    left: 352px;
-    top: 115px;
+    left: 313px;
+    top: 95px;
   }
 }
 #flow #flow3 .flow-h-4 {
@@ -557,8 +553,13 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #flow #flow3 .content .left {
-    margin-right: 55px;
     order: unset;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #flow #flow3 .content .left .flow_img5 {
+    margin-left: -50px;
   }
 }
 #flow #flow3 .content .left .flow-text3 {
@@ -567,8 +568,8 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #flow #flow3 .content .left .flow-text3 {
-    margin-left: 50px;
-    margin-top: 60px;
+    margin-left: 0px;
+    margin-top: 49px;
     width: 478px;
   }
 }
@@ -584,6 +585,7 @@ body {
     margin: 0;
     text-align: unset;
     margin-bottom: 0;
+    padding-left: 53px;
   }
 }
 #flow #flow3 .content .right img {
@@ -610,6 +612,7 @@ body {
 @media only screen and (min-width: 768px) {
   #sake {
     flex-direction: row;
+    padding-bottom: 0;
   }
 }
 #sake .left {
@@ -639,29 +642,42 @@ body {
 #sake .left .sake-img2 img {
   width: 55%;
 }
+@media only screen and (min-width: 768px) {
+  #sake .left .sake_h2 {
+    margin: 2px 0 0 3px;
+  }
+}
 #sake .left .text {
   margin: 6vw 0 6vw;
 }
 @media only screen and (min-width: 768px) {
   #sake .left .text {
-    margin-top: 45px;
-    margin-bottom: 64px;
+    margin-top: 36px;
+    margin-bottom: 58px;
+    width: 392px;
   }
 }
 #sake .left a.text-center {
-  font-size: 18px;
-  letter-spacing: 1.6px;
-  display: inline-block;
   position: relative;
-  padding: 0 65px;
-  margin: 0 auto;
+  display: block;
+  width: 70%;
+}
+@media only screen and (min-width: 768px) {
+  #sake .left a.text-center {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    padding: 0 65px;
+    margin: 0 53px 0 0;
+    width: auto;
+  }
 }
 #sake .left a.text-center::after {
   content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: black;
 }

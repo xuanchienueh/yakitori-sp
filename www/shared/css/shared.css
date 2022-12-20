@@ -251,6 +251,7 @@ a[href^="tel:"]:hover {
     top: 100%;
     width: 165px;
     background: white;
+    z-index: 1;
   }
   #header .header-fix-top .list-menu-top li:first-child .text-box a {
     display: block;
@@ -518,6 +519,7 @@ header .header-right-pc .menu-social .menu li a {
 
 @media only screen and (min-width: 768px) {
   .nav-fixed.right.pc {
+    height: auto;
     left: auto;
     right: 0;
     top: 25% !important;

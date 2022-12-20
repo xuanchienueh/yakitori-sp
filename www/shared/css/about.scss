@@ -9,7 +9,7 @@ body {
     background-image: url("../img/about/lead_bg.jpg");
     background-position: top center;
     padding-top: 130px;
-    padding-bottom: 150px;
+    padding-bottom: 146px;
     background-size: cover;
     height: auto;
   }
@@ -35,9 +35,9 @@ body {
       margin-bottom: 3vw;
       @include pc {
         text-align: left;
-        font-size: 56px;
-        line-height: 84px;
-        margin-bottom: 75px;
+        font-size: 52px;
+        line-height: 57px;
+        margin-bottom: 64px;
       }
     }
     p {
@@ -63,19 +63,18 @@ body {
     position: relative;
     padding: 0 6%;
     @include pc {
-      padding-top: 92px;
-      padding-bottom: 118px;
+      padding: 95px 3px 107px;
       &::after {
         content: url("../img/about/ingredients_bg.png");
         position: absolute;
-        left: -200px;
-        top: 0;
+        left: -194px;
+        top: 31px;
         z-index: -1;
       }
       &::before {
         position: absolute;
         content: url("../img/about/ingredients_img3.png");
-        right: -100px;
+        right: -117px;
         top: -36px;
       }
     }
@@ -83,7 +82,7 @@ body {
     .ingredients_h2 {
       margin-bottom: 9vw;
       @include pc {
-        margin-bottom: 65px;
+        margin-bottom: 68px;
       }
     }
     .content {
@@ -92,15 +91,12 @@ body {
       }
       .ingredients_img2 {
         margin-bottom: 3vw;
+        @include pc {
+          margin-bottom: 25px;
+        }
 
-        @include pc {
-          margin-bottom: 0;
-        }
         img {
-          width: 85%;
-        }
-        @include pc {
-          margin-bottom: 20px;
+          width: 58%;
         }
       }
     }
@@ -131,8 +127,9 @@ body {
       .left {
         text-align: left;
         @include pc {
-          padding-right: 20px;
-          width: 303px;
+          width: 282px;
+          margin: 0 51px 0 0;
+          transform: translate(20px, 13px);
         }
 
         img {
@@ -144,7 +141,7 @@ body {
       }
       .right {
         @include pc {
-          padding-left: 44px;
+          padding-left: 49px;
           width: 650px;
           border-left: 2px solid #5b5a56;
         }
@@ -162,7 +159,7 @@ body {
   background: url("../img/about/quality_bg_sp.jpg") no-repeat top center/100% auto, url("../img/about/quality_bg2_sp.jpg") repeat-y bottom center;
   padding: 0 0 12vw 0;
   @include pc {
-    padding: 60px 0 9px 0;
+    padding: 70px 0 0px 0;
     background-color: #e3e1db;
     background-image: unset;
     &::after {
@@ -186,7 +183,7 @@ body {
       &::before {
         content: url("../img/about/quality_bg.png");
         position: absolute;
-        top: 143px;
+        top: 124px;
         right: -447px;
         z-index: 1;
       }
@@ -230,7 +227,7 @@ body {
       @include pc {
         position: absolute;
         right: 30px;
-        top: 424px;
+        top: 364px;
         z-index: 1;
       }
 
@@ -261,12 +258,12 @@ body {
   position: relative;
   @include pc {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 113px;
     background-image: unset;
   }
   .deco-top {
     @include pc {
-      height: 100px;
+      height: 93px;
       margin-top: -100px;
       position: relative;
       &::before {
@@ -300,7 +297,7 @@ body {
         color: #e3e3e3;
         margin-top: 6vw;
         @include pc {
-          margin-top: 0;
+          margin-top: -56px;
         }
       }
     }
@@ -320,17 +317,18 @@ body {
         margin-top: -17vw;
 
         @include pc {
-          margin-top: 88px;
+          margin-top: 82px;
           padding-left: 40px;
           &::after {
             content: url("../img/about/flow_h_1.png");
             position: absolute;
-            top: -200px;
-            right: 105px;
+            top: -198px;
+            right: 85px;
           }
           .slide-item {
             img {
               width: 1000px;
+              height: 600px;
             }
           }
         }
@@ -409,8 +407,8 @@ body {
       &::before {
         content: url("../img/about/flow_h_2.png");
         position: absolute;
-        top: -78px;
-        left: 245px;
+        top: -87px;
+        left: 239px;
         z-index: 1;
       }
     }
@@ -440,7 +438,7 @@ body {
           display: flex;
           align-items: flex-end;
           order: unset;
-          margin-top: 0;
+          margin: 0 0 0 28px;
         }
       }
       .flow-h-3 {
@@ -449,7 +447,7 @@ body {
         text-align: center;
         @include pc {
           align-self: center;
-          transform: translateY(50px);
+          transform: translate(-11px, 57px);
           position: unset;
           text-align: unset;
         }
@@ -466,7 +464,7 @@ body {
         order: 1;
         @include pc {
           width: auto;
-          margin: 0;
+          margin: -11px 20px 0 0;
           order: unset;
         }
       }
@@ -476,12 +474,12 @@ body {
   #flow3 {
     position: relative;
     @include pc {
-      padding-top: 30px;
+      padding-top: 8px;
       &::after {
         content: url("../img/about/flow_h_5.png");
         position: absolute;
-        left: 352px;
-        top: 115px;
+        left: 313px;
+        top: 95px;
       }
     }
 
@@ -500,15 +498,20 @@ body {
         order: 2;
         width: 100%;
         @include pc {
-          margin-right: 55px;
           order: unset;
+          width: auto;
+        }
+        .flow_img5 {
+          @include pc {
+            margin-left: -50px;
+          }
         }
         .flow-text3 {
           color: #e3e3e3;
           margin-top: 6vw;
           @include pc {
-            margin-left: 50px;
-            margin-top: 60px;
+            margin-left: 0px;
+            margin-top: 49px;
             width: 478px;
           }
         }
@@ -523,6 +526,7 @@ body {
           margin: 0;
           text-align: unset;
           margin-bottom: 0;
+          padding-left: 53px;
         }
         img {
           width: 82%;
@@ -547,6 +551,7 @@ body {
   padding-bottom: 12vw;
   @include pc {
     flex-direction: row;
+    padding-bottom: 0;
   }
   .left {
     background: #ecece8;
@@ -572,26 +577,37 @@ body {
         width: 55%;
       }
     }
+    .sake_h2 {
+      @include pc {
+        margin: 2px 0 0 3px;
+      }
+    }
     .text {
       margin: 6vw 0 6vw;
       @include pc {
-        margin-top: 45px;
-        margin-bottom: 64px;
+        margin-top: 36px;
+        margin-bottom: 58px;
+        width: 392px;
       }
     }
     a.text-center {
-      font-size: 18px;
-      letter-spacing: 1.6px;
-      display: inline-block;
       position: relative;
-      padding: 0 65px;
-      margin: 0 auto;
+      display: block;
+      width: 70%;
+      @include pc {
+        display: inline-block;
+        font-size: 18px;
+        letter-spacing: 1.6px;
+        padding: 0 65px;
+        margin: 0 53px 0 0;
+        width: auto;
+      }
       &::after {
         content: "";
         position: absolute;
         bottom: -4px;
         left: 0;
-        height: 2px;
+        height: 1px;
         width: 100%;
         background: black;
       }

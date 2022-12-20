@@ -226,6 +226,7 @@ a[href^="tel:"]:hover {
             top: 100%;
             width: 165px;
             background: white;
+            z-index: 1;
             a {
               display: block;
               color: #000;
@@ -498,6 +499,7 @@ header {
 }
 .nav-fixed.right.pc {
   @include pc {
+    height: auto;
     left: auto;
     right: 0;
     top: 25% !important;
