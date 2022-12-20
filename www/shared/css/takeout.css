@@ -1,3 +1,306 @@
-h1 {
-  color: green;
+/*=============================================
+// Scss Document
+* body
+*=============================================*/
+#lead {
+  padding: 12vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #lead {
+    padding: 130px 0 0 0;
+  }
+}
+#lead .wrap {
+  position: relative;
+}
+#lead .wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/takeout/lead_deco.png") no-repeat top center/100% auto;
+  width: 100%;
+  z-index: -1;
+  height: 55vw;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap::after {
+    height: 100%;
+    top: -36px;
+  }
+}
+#lead .wrap h2 {
+  width: 80%;
+  margin: 0 auto 10vw;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap h2 {
+    margin: 0 0 64px 0;
+    width: auto;
+  }
+}
+#lead .wrap .lead-txt {
+  margin: 0 0 10vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap .lead-txt {
+    margin: 0 auto 75px auto;
+    width: 585px;
+    text-align: center;
+  }
+}
+#lead .wrap .box-info {
+  background: url("../img/takeout/lead_bg_box.jpg");
+  padding: 12vw 6%;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap .box-info {
+    padding: 73px 90px 68px 90px;
+    width: 740px;
+    height: 517px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+}
+#lead .wrap .box-info h3 {
+  margin: 0 0 8vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap .box-info h3 {
+    margin: 0 0 21px 0;
+  }
+}
+#lead .wrap .box-info .lead-txt-box {
+  margin: 0 0 8vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap .box-info .lead-txt-box {
+    margin: 0 0 43px 0;
+  }
+}
+#lead .wrap .box-info .lead-btn {
+  margin: 0 auto 8vw auto;
+  width: 80%;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap .box-info .lead-btn {
+    margin: 0 auto 29px auto;
+    padding: 0 6px 0 0;
+  }
+}
+#lead .wrap .box-info .lead-btn a {
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  #lead .wrap .box-info .lead-tel {
+    padding: 0 5px 0 0;
+  }
+}
+
+#menu {
+  padding: 0 0 12vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu {
+    padding: 0 0 0 0;
+  }
+}
+#menu .menu-bg {
+  position: relative;
+  margin: -44vw 0 0 0;
+  z-index: -1;
+}
+#menu .menu-bg::before {
+  content: "";
+  position: absolute;
+  top: -1vw;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  height: 25vw;
+  background: url("../img/takeout/menu_deco1.png") no-repeat top center;
+}
+#menu .menu-bg::after {
+  content: "";
+  position: absolute;
+  bottom: -1vw;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  height: 25vw;
+  background: url("../img/takeout/menu_deco2.png") no-repeat bottom center;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-bg {
+    margin: -200px 0 0 0;
+  }
+}
+#menu .menu-bg img {
+  height: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-bg img {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap {
+    padding: 50px 0 116px;
+  }
+}
+#menu .wrap .menu-item {
+  margin-bottom: 10vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap .menu-item {
+    margin: 0 0 50px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu1 .left {
+    margin-left: -50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu1 .right {
+    margin-left: 55px;
+  }
+}
+#menu .wrap #menu1 .right .name-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 6vw;
+  margin: 4vw 0 5vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu1 .right .name-menu {
+    font-size: 26px;
+    margin: 0 0 auto 0;
+  }
+}
+#menu .wrap #menu1 .right .menu-description {
+  padding: 0 4%;
+  margin: 0 0 6vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu1 .right .menu-description {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 336px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu2 .left {
+    order: 2;
+    margin: 0 -66px 0 63px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu2 .right {
+    order: 1;
+  }
+}
+#menu .wrap #menu2 .right .name-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 6vw;
+  margin: 4vw 0 5vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu2 .right .name-menu {
+    font-size: 26px;
+    margin: 0 0 0 0;
+  }
+}
+#menu .wrap #menu2 .right .menu-description {
+  padding: 0 4%;
+  margin: 0 0 6vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu2 .right .menu-description {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 336px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap .right .name-menu {
+    align-items: flex-end;
+    margin-bottom: 66px !important;
+  }
+  #menu .wrap .right .name-menu .name {
+    font-size: 46px;
+    line-height: 72px;
+  }
+  #menu .wrap .right .name-menu .price {
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 18px;
+  }
+}
+#menu .wrap #menu3 {
+  margin-top: 16vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 {
+    margin: 70px 0 0px 0;
+  }
+}
+#menu .wrap #menu3 h2 {
+  padding: 0 9% 4vw;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 h2 {
+    width: auto;
+    margin: 0 auto;
+    padding: 0px 0 40px 0;
+  }
+}
+#menu .wrap #menu3 .sub-title {
+  text-align: center;
+  margin-bottom: 3vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 .sub-title {
+    margin: 0 0 65px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 .menu3-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 .menu3-content .item {
+    width: 470px;
+  }
+}
+#menu .wrap #menu3 .menu3-content .item h3 {
+  font-size: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 .menu3-content .item h3 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+}
+#menu .wrap #menu3 .menu3-content .item dl {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1.5vw;
+  margin-bottom: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu3 .menu3-content .item dl {
+    padding: 0 0 4px 0;
+    margin: 0 0 16px 0;
+  }
 }/*# sourceMappingURL=takeout.css.map */
