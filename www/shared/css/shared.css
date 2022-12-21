@@ -156,6 +156,15 @@ img {
   display: -o-flex;
 }
 
+@media only screen and (min-width: 768px) {
+  .flex-pc {
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+  }
+}
+
 .d-block {
   display: block;
 }
@@ -592,9 +601,6 @@ header .header-right-pc .menu-social .menu li a {
 #menu_toggle .menu2 li.active {
   background: #161515;
   border-bottom: 1px solid transparent;
-}
-#menu_toggle .menu2 li {
-  border-bottom: 1px solid #606060;
 }
 #menu_toggle .menu2 li a {
   padding: 3vw 0;

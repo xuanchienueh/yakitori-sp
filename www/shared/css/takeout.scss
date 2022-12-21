@@ -104,8 +104,9 @@ body {
       right: 0;
       height: 25vw;
       background: url("../img/takeout/menu_deco1.png") no-repeat top center;
-      background-size: 100%;
+      background-size: 150%;
       @include pc {
+        background-size: 100%;
         height: 200px;
       }
     }
@@ -118,8 +119,9 @@ body {
       right: 0;
       height: 25vw;
       background: url("../img/takeout/menu_deco2.png") no-repeat bottom center;
-      background-size: 100%;
+      background-size: 150%;
       @include pc {
+        background-size: 100%;
         bottom: -2px;
         height: 200px;
       }
@@ -151,6 +153,10 @@ body {
     }
 
     #menu1 {
+      margin-top: 10vw;
+      @include pc {
+        margin-top: auto;
+      }
       .left {
         @include pc {
           margin-left: -50px;

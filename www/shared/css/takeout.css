@@ -125,10 +125,11 @@
   right: 0;
   height: 25vw;
   background: url("../img/takeout/menu_deco1.png") no-repeat top center;
-  background-size: 100%;
+  background-size: 150%;
 }
 @media only screen and (min-width: 768px) {
   #menu .menu-bg::before {
+    background-size: 100%;
     height: 200px;
   }
 }
@@ -141,10 +142,11 @@
   right: 0;
   height: 25vw;
   background: url("../img/takeout/menu_deco2.png") no-repeat bottom center;
-  background-size: 100%;
+  background-size: 150%;
 }
 @media only screen and (min-width: 768px) {
   #menu .menu-bg::after {
+    background-size: 100%;
     bottom: -2px;
     height: 200px;
   }
@@ -178,6 +180,14 @@
     margin: 0 0 50px 0;
     display: flex;
     align-items: center;
+  }
+}
+#menu .wrap #menu1 {
+  margin-top: 10vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap #menu1 {
+    margin-top: auto;
   }
 }
 @media only screen and (min-width: 768px) {

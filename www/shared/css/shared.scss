@@ -143,6 +143,15 @@ img {
   display: -ms-flex;
   display: -o-flex;
 }
+.flex-pc {
+  @include pc {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+  }
+}
 .d-block {
   display: block;
 }
@@ -569,11 +578,8 @@ header {
       background: #161515;
       border-bottom: 1px solid transparent;
     }
-    li {
-      border-bottom: 1px solid #606060;
-      a {
-        padding: 3vw 0;
-      }
+    li a {
+      padding: 3vw 0;
     }
   }
   .menu3 {
