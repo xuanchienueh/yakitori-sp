@@ -88,7 +88,10 @@
           </ul>
           <ul class="menu3 text-center">
             <li>求人情報</li>
-            <li><a class="first" href="">独立支援者</a> / <a href="#">正社員/アルバイト</a></li>
+            <li>
+              <a class="first" href="https://www.yakitori-sora-nagoya.com/owner.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_独立支援'});">独立支援者</a> /
+              <a href="https://www.yakitori-sora-nagoya.com/recruit.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_k求人'});">正社員/アルバイト</a>
+            </li>
             <li><a href="#floor">店内のご案内</a></li>
             <li><a href="#news">新着情報</a></li>
           </ul>
@@ -486,15 +489,21 @@
         </div>
         <div class="nav-fixed">
           <ul id="ft_fixed" class="d-flex">
-            <li><a href="#"></a><img src="./shared/img/index/header_fix_btn1.jpg" width="148" height="113" alt="080-3624-7811" /></li>
             <li>
-              <a href="#"><img src="./shared/img/index/header_fix_btn2.jpg" width="150" height="113" alt="map" /></a>
+              <a href="#" onClick="gtag('event','click',{'event_category':'tel','event_label':'fix_phone'});">
+                <img src="./shared/img/index/header_fix_btn1.jpg" width="148" height="113" alt="080-3624-7811" />
+              </a>
             </li>
             <li>
-              <a href="#"><img src="./shared/img/index/header_fix_bnt3.jpg" width="150" height="113" alt="WEB予約" /></a>
+              <a href="https://goo.gl/maps/QP2DT4xyFh2EZfHk9" onclick="gtag('event','click',{'event_category':'Links','event_label':'fixed_map'});" target="_blank" rel="nofollow"
+                ><img src="./shared/img/index/header_fix_btn2.jpg" width="150" height="113" alt="map"
+              /></a>
             </li>
             <li>
-              <a href="#"><img src="./shared/img/index/header_fix_btn4.jpg" width="300" height="113" alt="テイクアウト" /></a>
+              <a href="#" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_reserve'});"><img src="./shared/img/index/header_fix_bnt3.jpg" width="150" height="113" alt="WEB予約" /></a>
+            </li>
+            <li>
+              <a href="takeout.html"><img src="./shared/img/index/header_fix_btn4.jpg" width="300" height="113" alt="テイクアウト" /></a>
             </li>
           </ul>
         </div>
