@@ -1,0 +1,232 @@
+/*=============================================
+// Scss Document
+* body
+*=============================================*/
+body {
+  background: url("../img/counter/bg_sp.jpg") repeat top center;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background: url("../img/counter/bg.jpg") repeat top center;
+  }
+}
+
+#lead {
+  position: relative;
+}
+#lead:after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  height: 100px;
+  left: 0;
+  width: 100%;
+  background: red;
+  background: url("../img/counter/lead_deco.png") no-repeat top center/100% auto;
+}
+#lead .lead-bg {
+  position: relative;
+}
+#lead .lead-content {
+  background: #000;
+  color: #c3c3c1;
+  padding: 1vw 6% 9vw;
+}
+@media only screen and (min-width: 768px) {
+  #lead .lead-content {
+    padding: 0px 0px 0px 0px;
+  }
+}
+#lead .lead-content h2 {
+  margin: 0 0 9vw;
+}
+@media only screen and (min-width: 768px) {
+  #lead .lead-content h2 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+#lead .lead-content h2 img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #lead .lead-content h2 img {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
+#menu .menu-dt-dd {
+  font-size: 6vw;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-dt-dd {
+    font-size: 36px;
+    line-height: 32px;
+  }
+}
+#menu .menu-dl {
+  padding: 6vw 0 0 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-dl {
+    padding: 0px 0px 0px 0px;
+  }
+}
+#menu .menu-txt {
+  color: #5b5a56;
+  padding: 6vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-txt {
+    padding: 0px 0px 0px 0px;
+  }
+}
+#menu .menu-content {
+  padding: 0 6%;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-content {
+    padding: 0px 0px 0px 0px;
+  }
+}
+#menu .wrap {
+  background: url("../img/counter/menu_deco.png") no-repeat bottom center/120% auto;
+}
+@media only screen and (min-width: 768px) {
+  #menu .wrap {
+    background-image: unset;
+  }
+}
+#menu #menu1 .right .group {
+  border-left: 2px solid #000;
+  padding: 0 6%;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu1 .right .group {
+    padding: 0px 0px 0px 0px;
+  }
+}
+#menu #menu1 .right .group h2 {
+  width: 70%;
+  margin: 6vw auto;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu1 .right .group h2 {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
+#menu #menu1 .right .p2 {
+  margin: 6vw 6% 6vw 6%;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu1 .right .p2 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+#menu #menu2 .left {
+  position: relative;
+}
+#menu #menu2 .left:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  background: url("../img/counter/menu_bg.jpg") repeat top center;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu2 .left:after {
+    display: none;
+  }
+}
+#menu #menu2 .right {
+  background: url("../img/counter/menu_bg.jpg") repeat top center;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu2 .right {
+    padding: 0px 0px 0px 0px;
+  }
+}
+#menu .group-menu3-menu4 .menu3 {
+  background: url("../img/counter/menu_bg.jpg");
+}
+#menu .group-menu3-menu4 .menu3 .icon_close {
+  width: 15%;
+  margin: 0 auto;
+  padding: 4vw 0 12vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu .group-menu3-menu4 .menu3 .icon_close {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+#menu .group-menu3-menu4 .menu4 {
+  background: url("../img/counter/menu_bg.jpg");
+}
+#menu .menu-slick .slick-item .menu-content {
+  background: url("../img/counter/menu_bg.jpg");
+}
+#menu .menu-slick .slick-dots {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  padding: 10px 0 15px;
+}
+#menu .menu-slick .slick-dots li {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+}
+#menu .menu-slick .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  background: #646464;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+#menu .menu-slick .slick-dots li.slick-active button {
+  background: #000;
+}
+#menu .menu-slick .slick-arrow {
+  position: absolute;
+  top: 0;
+  width: calc(50% - 500px);
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
+  border: none !important;
+  text-indent: -9999px;
+  z-index: 99;
+  cursor: pointer;
+}
+#menu .menu-slick .slick-arrow.slick-prev {
+  left: 0%;
+  background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
+}
+#menu .menu-slick .slick-arrow.slick-next {
+  right: 0%;
+}
+#menu .menu-btn {
+  width: 80%;
+  margin: 12vw auto;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-btn {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
+#menu .menu-btn a {
+  display: block;
+}/*# sourceMappingURL=counter.css.map */
