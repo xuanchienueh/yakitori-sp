@@ -2,7 +2,7 @@
 @import "global.scss";
 body {
   background: #edede8;
-  letter-spacing: 1px;
+  letter-spacing: 1.6px;
 }
 #lead {
   @include pc {
@@ -63,7 +63,7 @@ body {
     position: relative;
     padding: 0 6%;
     @include pc {
-      padding: 95px 3px 107px;
+      padding: 95px 3px 75px;
       &::after {
         content: url("../img/about/ingredients_bg.png");
         position: absolute;
@@ -244,8 +244,6 @@ body {
       color: #5b5a56;
 
       @include pc {
-        // position: absolute;
-        // top: 705px;
         width: 503px;
       }
     }
@@ -318,12 +316,13 @@ body {
 
         @include pc {
           margin-top: 82px;
-          padding-left: 40px;
+          margin-left: 40px;
+          width: 920px;
           &::after {
             content: url("../img/about/flow_h_1.png");
             position: absolute;
             top: -198px;
-            right: 85px;
+            right: 41px;
           }
           .slide-item {
             img {
@@ -339,7 +338,10 @@ body {
           display: flex;
           justify-content: flex-start;
           z-index: 99;
-          padding: 0px 0 15px;
+          @include pc {
+            padding: 4px 0 11px;
+            margin: 0px 0px 0px -13px;
+          }
           li {
             width: 15px;
             height: 15px;
@@ -484,9 +486,11 @@ body {
     }
 
     .flow-h-4 {
-      margin: 5vw 0 17vw;
+      margin: 5vw auto 17vw;
+      width: 80%;
       @include pc {
         margin: 0 0 70px 0;
+        width: auto;
       }
     }
     .content {

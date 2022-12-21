@@ -14,9 +14,9 @@
     <title>__TITLE__</title>
 
     <!-- Social Share - Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:locale" content="ja_JP" />
-    <meta property="og:url" content="http://www.*****.com/" />
+    <meta property="og:url" content="http://www.*****.com/course.html" />
     <meta property="og:image" content="http://www.*****.com/shared/img/shared/ogp.png" />
     <meta property="og:title" content="__TITLE__" />
     <meta property="og:site_name" content="__TITLE__" />
@@ -36,7 +36,7 @@
     <script src="shared/js/viewport.js"></script>
 
     <!-- Profiles -->
-    <link rel="canonical" href="http://www.*****.com/" />
+    <link rel="canonical" href="http://www.*****.com/course.html" />
     <link rel="profile" href="http://microformats.org/profile/hcard" />
     <link rel="apple-touch-icon" href="shared/img/shared/apple-touch-icon.png" />
     <link rel="shortcut icon" href="shared/img/shared/favicon.ico" />
@@ -47,19 +47,12 @@
     <link rel="stylesheet" href="shared/css/slick.min.css" />
     <link rel="stylesheet" href="shared/css/remodal.css" />
     <link rel="stylesheet" href="shared/css/shared.css" />
-    <link rel="stylesheet" href="shared/css/index.css" />
     <link rel="stylesheet" href="./shared/css/course.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- style scss -->
-    <!-- <link rel="stylesheet" href="./shared/css/global.scss" />
-    <link rel="stylesheet" href="./shared/css/shared.scss" />
-    <link rel="stylesheet" href="./shared/css/index.scss" />
-    <link rel="stylesheet" href="./shared/css/course.scss" /> -->
   </head>
 
   <body>
@@ -158,10 +151,7 @@
         </div>
       </div>
       <header id="header">
-        <h1>
-          h１が入りま すh１が入りますh１が入ります <br class="sp" />
-          h１が入ります
-        </h1>
+        <h1>h１が入りま すh１が入りますh１が入ります <br class="sp" />h１が入ります</h1>
         <p class="logo d-flex justify-center">
           <a href="index.html"><img src="./shared/img/index/logo.png" width="298" height="134" class="" alt="logo" /></a>
         </p>
@@ -183,7 +173,7 @@
                 </li>
                 <li><a href="index.html#floor">店内のご案内</a></li>
                 <li><a href="index.html#news">新着情報</a></li>
-                <li>
+                <li class="map">
                   <a class="map" href="#"><img src="./shared/img/index/location.png" width="20" height="20" alt="icon-map" /> <span>MAP</span></a>
                 </li>
               </ul>
@@ -192,11 +182,11 @@
               </div>
             </div>
             <nav class="nav-fl">
-              <a class="active" href="index.html">ホーム</a>
+              <a href="index.html">ホーム</a>
               <a href="about.html">空の想い</a>
               <a href="menu.html">焼鳥のお品書き</a>
               <a href="scene.html">カウンターの愉しみ方</a>
-              <a href="course.html">コース</a>
+              <a class="active" href="course.html">コース</a>
               <a href="takeout.html">テイクアウト</a>
               <a href="index.html#access">店舗情報</a>
             </nav>
@@ -286,15 +276,14 @@
           <p class="sp"></p>
           <div class="lead-info">
             <h2><img src="./shared/img/course/lead_h2.png" width="202" height="623" alt="おすすめを愉しむ 　空のコース" /></h2>
-            <p class="text-white txt-vertical-pc">
-              名古屋市千種区に店を構える「焼鳥 空 今池店（やきとり そら いまいけてん）」。<br class="pc" />
-              当店では、普段のお食事はもちろん接待やデートなど、いつもより少し特別なディナーにも心よりのおもてなしでお応えしております。
-              お料理は単品でもございますが、質や品数によって異なる3つのコースもまた大変人気です。納得のいく味を追求するが故、時季ごとの仕入れによってその内容は変わります。
-              新たな出合いを愉しみながら、厳選して取り揃える日本酒とぜひあわせていただき、その美味しさの高め合いに舌鼓を―。 それぞれの串ごとに、きっと寄り添う様な相性の良さを感じていただけることでしょう。
+            <p class="txt-vertical-pc">
+              名古屋市千種区に店を構える「焼鳥 空 今池店（やきとり そら いまいけてん）」。<br
+                class="pc"
+              />当店では、普段のお食事はもちろん接待やデートなど、いつもより少し特別なディナーにも心よりのおもてなしでお応えしております。お料理は単品でもございますが、質や品数によって異なる3つのコースもまた大変人気です。納得のいく味を追求するが故、時季ごとの仕入れによってその内容は変わります。新たな出合いを愉しみながら、厳選して取り揃える日本酒とぜひあわせていただき、その美味しさの高め合いに舌鼓を―。それぞれの串ごとに、きっと寄り添う様な相性の良さを感じていただけることでしょう。
             </p>
           </div>
         </div>
-        <div id="section-course">
+        <div id="course">
           <div class="bg-para">
             <div class="img-parallax">
               <img class="pc" src="./shared/img/course/course_prr1.jpg" width="1600" height="680" alt="コース" />
@@ -311,7 +300,7 @@
               <p><img src="./shared/img/course/course_img2.jpg" width="610" height="340" alt="串" /></p>
             </div>
             <div class="right">
-              <h2 class="text-white h2-course">6,600円コース（税込み)</h2>
+              <h2 class="text-white h2-course">6,600円コース(税込み)</h2>
               <div class="set1-content">
                 <ul>
                   <li>・メニュータイトル</li>
@@ -508,10 +497,10 @@
     <script src="shared/js/slick.js"></script>
     <!--<script src="shared/js/ScrollMagic.min.js"></script> -->
     <script type="text/javascript" src="shared/js/remodal.js"></script>
-    <script type="text/javascript" src="shared/js/infiniteslidev2.js"></script>
+    <!-- <script type="text/javascript" src="shared/js/infiniteslidev2.js"></script> -->
     <script src="shared/js/common.js"></script>
     <script src="shared/js/shared.js"></script>
-    <script src="shared/js/jquery.rss.js"></script>
+    <!-- <script src="shared/js/jquery.rss.js"></script> -->
 
     <script>
       $(".reserve-slide").slick({
@@ -520,7 +509,7 @@
         speed: 500,
         fade: true,
         cssEase: "linear",
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
       });
     </script>

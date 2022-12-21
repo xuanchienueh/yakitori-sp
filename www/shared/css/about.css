@@ -1,7 +1,7 @@
 /* Scss Document */
 body {
   background: #edede8;
-  letter-spacing: 1px;
+  letter-spacing: 1.6px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,7 +72,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients1 {
-    padding: 95px 3px 107px;
+    padding: 95px 3px 75px;
   }
   #ingredients .ingredients1::after {
     content: url("../img/about/ingredients_bg.png");
@@ -359,13 +359,14 @@ body {
 @media only screen and (min-width: 768px) {
   #flow .wrap .flow-slide-wrap .flow-slide {
     margin-top: 82px;
-    padding-left: 40px;
+    margin-left: 40px;
+    width: 920px;
   }
   #flow .wrap .flow-slide-wrap .flow-slide::after {
     content: url("../img/about/flow_h_1.png");
     position: absolute;
     top: -198px;
-    right: 85px;
+    right: 41px;
   }
   #flow .wrap .flow-slide-wrap .flow-slide .slide-item img {
     width: 1000px;
@@ -378,7 +379,12 @@ body {
   display: flex;
   justify-content: flex-start;
   z-index: 99;
-  padding: 0px 0 15px;
+}
+@media only screen and (min-width: 768px) {
+  #flow .wrap .flow-slide-wrap .flow-slide .slick-dots {
+    padding: 4px 0 11px;
+    margin: 0px 0px 0px -13px;
+  }
 }
 #flow .wrap .flow-slide-wrap .flow-slide .slick-dots li {
   width: 15px;
@@ -532,11 +538,13 @@ body {
   }
 }
 #flow #flow3 .flow-h-4 {
-  margin: 5vw 0 17vw;
+  margin: 5vw auto 17vw;
+  width: 80%;
 }
 @media only screen and (min-width: 768px) {
   #flow #flow3 .flow-h-4 {
     margin: 0 0 70px 0;
+    width: auto;
   }
 }
 #flow #flow3 .content {
