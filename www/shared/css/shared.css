@@ -285,7 +285,7 @@ a[href^="tel:"]:hover {
   }
   #header .nav-fl a {
     cursor: pointer;
-    margin-left: 52px;
+    margin-left: 50px;
   }
   #header .nav-fl a:hover {
     color: #fff;
@@ -375,7 +375,7 @@ header .header-right-pc {
   position: absolute;
   right: 0px;
   top: 26px;
-  width: 390px;
+  width: 400px;
 }
 header .header-right-pc .list-menu-top {
   color: #edece7;
@@ -730,7 +730,7 @@ header .header-right-pc .menu-social .menu li a {
     display: flex;
   }
   footer .menu-footer ul li {
-    padding: 0 25px;
+    padding: 0 24px;
     border-right: 1px solid #edece7;
     height: 20px;
     line-height: 20px;

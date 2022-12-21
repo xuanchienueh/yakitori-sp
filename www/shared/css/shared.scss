@@ -262,7 +262,7 @@ a[href^="tel:"]:hover {
       color: #67665f;
       a {
         cursor: pointer;
-        margin-left: 52px;
+        margin-left: 50px;
         &:hover {
           color: #fff;
         }
@@ -349,7 +349,7 @@ header {
     position: absolute;
     right: 0px;
     top: 26px;
-    width: 390px;
+    width: 400px;
     .list-menu-top {
       color: #edece7;
       position: relative;
@@ -696,7 +696,7 @@ footer {
       ul {
         display: flex;
         li {
-          padding: 0 25px;
+          padding: 0 24px;
           border-right: 1px solid #edece7;
           height: 20px;
           line-height: 20px;

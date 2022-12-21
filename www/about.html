@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="shared/css/remodal.css" />
     <link rel="stylesheet" href="shared/css/shared.css" />
     <link rel="stylesheet" href="./shared/css/about.css" />
+    <!-- <link rel="stylesheet" href="./shared/css/about.scss" /> -->
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,8 +79,8 @@
             </li>
           </ul>
           <ul class="menu2">
-            <li class="text-center active"><a class="d-block" href="index.html">ホーム</a></li>
-            <li class="text-center"><a class="d-block" href="about.html">空の想い</a></li>
+            <li class="text-center"><a class="d-block" href="index.html">ホーム</a></li>
+            <li class="text-center active"><a class="d-block" href="about.html">空の想い</a></li>
             <li class="text-center"><a class="d-block" href="menu.html">焼鳥のお品書き</a></li>
             <li class="text-center"><a class="d-block" href="scene.html">カウンターの愉しみ方</a></li>
             <li class="text-center"><a class="d-block" href="course.html">コース</a></li>
@@ -151,19 +152,15 @@
         </div>
       </div>
       <header id="header">
-        <h1>
-          h１が入りま すh１が入りますh１が入ります <br class="sp" />
-          h１が入ります
-        </h1>
+        <h1>h１が入りま すh１が入りますh１が入ります <br class="sp" />h１が入ります</h1>
         <p class="logo d-flex justify-center">
           <a href="index.html"><img src="./shared/img/index/logo.png" width="298" height="134" class="" alt="logo" /></a>
         </p>
         <div id="key">
           <ul class="key-slide slide-fade stop">
-            <li class="pc slide-img1"><img src="./shared/img/index/kv_img01.jpg" width="1499" height="900" alt="店内" /></li>
-            <li class="pc slide-img2"><img src="./shared/img/index/kv_img02.jpg" width="1499" height="900" alt="焼鳥" /></li>
-            <li class="pc slide-img3"><img src="./shared/img/index/kv_img03.jpg" width="1499" height="900" alt="一品" /></li>
-            <li class="sp"><img src="./shared/img/about/kv_img_sp.jpg" width="750" height="750" alt="串" /></li>
+            <li class="slide-img1"><img src="./shared/img/index/kv_img01.jpg" width="1499" height="900" alt="店内" /></li>
+            <li class="slide-img2"><img src="./shared/img/index/kv_img02.jpg" width="1499" height="900" alt="焼鳥" /></li>
+            <li class="slide-img3"><img src="./shared/img/index/kv_img03.jpg" width="1499" height="900" alt="一品" /></li>
           </ul>
         </div>
         <div class="nav-fixed pc">
@@ -284,14 +281,9 @@
           <div class="content">
             <h2 class="text-white">一串の美味しさのために</h2>
             <p>
-              「焼鳥 空 今池店（やきとり そら いまいけてん）」は名古屋市千種区、今 <br class="pc" />
-              池駅の北側にて店を構えております。<br class="pc" />
-              当店の魅力は、朝挽き名古屋コーチンや奥三河どりなどの厳選鶏を使用し <br class="pc" />
-              た本格焼鳥。 <br class="pc" />
-              経験と技術を要する焼鳥は、「串打ち三年、焼き一生」と言われるほど奥 <br class="pc" />
-              深く、その美味しさは店によって異なるものです。 <br class="pc" />
-              だからこそ当店では、素材の厳選から、丁寧な串打ち、扱う炭、火入れ加 減まで、どの工程にも妥協なく、空ならではの一本をお届けしています 家族や友人、仕事仲間とのご飯をはじめ、デートや接待などの少し特別な
-              夜にもぜひ。上質さと居酒屋のような気軽さを兼ね備えた居心地の良い空 間にて、ごゆるりとお過ごしください。
+              「焼鳥 空 今池店（やきとり そら いまいけてん）」は名古屋市千種区、今 <br class="pc" />池駅の北側にて店を構えております。<br class="pc" />当店の魅力は、朝挽き名古屋コーチンや奥三河どりなどの厳選鶏を使用し <br class="pc" />た本格焼鳥。
+              <br class="pc" />経験と技術を要する焼鳥は、「串打ち三年、焼き一生」と言われるほど奥 <br class="pc" />深く、その美味しさは店によって異なるものです。 <br class="pc" />だからこそ当店では、素材の厳選から、丁寧な串打ち、扱う炭、火入れ加
+              減まで、どの工程にも妥協なく、空ならではの一本をお届けしています家族や友人、仕事仲間とのご飯をはじめ、デートや接待などの少し特別な夜にもぜひ。上質さと居酒屋のような気軽さを兼ね備えた居心地の良い空 間にて、ごゆるりとお過ごしください。
             </p>
           </div>
         </div>
@@ -342,8 +334,9 @@
               <img class="quality-img2" src="./shared/img/about/quality_img2.jpg" alt="シーン" width="381" height="508" />
             </div>
             <p class="txt">
-              直接生産者さんのもとへ足を運び、自らの肌で感じる素材の魅 力。例えば、朝挽きの名古屋コーチンは、抗生物質や合成抗菌 剤を一切使用しない専用の飼料を与えながら、豊かな自然の中 で野生に近い環境で育てられており、鶏がとても活き活きとし
-              ているのが特徴的です。安全に配慮した健康的な鶏の美味しさ や、ブロイラーの約3倍の肥育期間をかけて大切に育てられて いる生産者さんの食材への深い愛情や熱い想いを、焼鳥を通し てお伝えしてまいります。
+              直接生産者さんのもとへ足を運び、自らの肌で感じる素材の魅 力。例えば、朝挽きの名古屋コーチンは、抗生物質や合成抗菌 剤を一切使用しない専用の飼料を与えながら、豊かな自然の中
+              で野生に近い環境で育てられており、鶏がとても活き活きとしているのが特徴的です。安全に配慮した健康的な鶏の美味しさ や、ブロイラーの約3倍の肥育期間をかけて大切に育てられて いる生産者さんの食材への深い愛情や熱い想いを、焼鳥を通し
+              てお伝えしてまいります。
             </p>
           </div>
         </div>
@@ -398,8 +391,9 @@
                 <p class="flow_img5"><img src="./shared/img/about/flow_img5.jpg" alt="塩" width="520" height="460" /></p>
 
                 <p class="flow-text3">
-                  素材の旨味を引き立てるのは、やはりタレや塩の存在が要。 秘伝のタレは継ぎ足しでお作りしており、鶏ガラの出汁をベ ースに長ネギやにんにく、隠し味に白味噌などをあわせて味 に深みを加えています。また塩は全国20ヶ所以上の塩を取り
-                  寄せ、当店の焼鳥との相性を考え吟味し、甘味の強いピンク ロックソルトを厳選。部位によってこの2つを使い分けてい ます。 相性の良さを熟知するが故、味付けはぜひおまかせでご注文 を。もちろんご希望も承りますのでお申し付けください。
+                  素材の旨味を引き立てるのは、やはりタレや塩の存在が要。 秘伝のタレは継ぎ足しでお作りしており、鶏ガラの出汁をベ ースに長ネギやにんにく、隠し味に白味噌などをあわせて味
+                  に深みを加えています。また塩は全国20ヶ所以上の塩を取り寄せ、当店の焼鳥との相性を考え吟味し、甘味の強いピンク ロックソルトを厳選。部位によってこの2つを使い分けてい ます。 相性の良さを熟知するが故、味付けはぜひおまかせでご注文
+                  を。もちろんご希望も承りますのでお申し付けください。
                 </p>
               </div>
               <div class="right">
@@ -427,6 +421,7 @@
           <div class="right"><img class="sp" src="./shared/img/about/sake_img1.jpg" width="1040" height="747" /></div>
         </div>
       </section>
+
       <footer id="footer">
         <div class="wrap">
           <div class="footer-logo text-center">
@@ -530,16 +525,19 @@
     <script>
       $(document).ready(function () {
         $(".flow-slide").slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: 0,
+          // slidesToShow: 1,
+          // slidesToScroll: 1,
+          autoplay: 1,
           autoplaySpeed: 3000,
-          speed: 1000,
           arrows: true,
           dots: true,
           infinite: true,
-          centerMode: false,
-          variableWidth: true,
+          // centerMode: false,
+          // variableWidth: true,
+          fade: true,
+          dots: true,
+          speed: 500,
+          cssEase: "linear",
           responsive: [
             {
               breakpoint: 999,
