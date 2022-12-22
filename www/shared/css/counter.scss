@@ -9,8 +9,22 @@ body {
     background: url("../img/counter/bg.jpg") repeat top center;
   }
 }
+.order1-pc {
+  @include pc {
+    order: 1 !important;
+  }
+}
+.order2-pc {
+  @include pc {
+    order: 2 !important;
+  }
+}
 #lead {
   position: relative;
+  @include pc {
+    height: 850px;
+    background: url("../img/counter/lead_bg.jpg") no-repeat top center/cover;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -18,7 +32,6 @@ body {
     height: 100px;
     left: 0;
     width: 100%;
-    background: red;
     background: url("../img/counter/lead_deco.png") no-repeat top center/100% auto;
   }
   .lead-bg {
@@ -30,12 +43,15 @@ body {
     color: #c3c3c1;
     padding: 1vw 6% 9vw;
     @include pc {
-      padding: 0px 0px 0px 0px;
+      padding: 140px 0px 0px 0px;
+      background: unset;
+      margin: 0px 0px 0px 60px;
+      width: 472px;
     }
     h2 {
       margin: 0 0 9vw;
       @include pc {
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 38px 0px;
       }
       img {
         width: 70%;
@@ -48,6 +64,9 @@ body {
       }
     }
     .lead-txt {
+      @include pc {
+        margin: 46px 0px 0px 0px;
+      }
     }
   }
 }
@@ -58,6 +77,8 @@ body {
     @include pc {
       font-size: 36px;
       line-height: 32px;
+      margin: 0px 0px 31px 0px;
+      letter-spacing: 4px;
     }
   }
   .menu-dl {
@@ -84,24 +105,49 @@ body {
     background: url("../img/counter/menu_deco.png") no-repeat bottom center/120% auto;
     @include pc {
       background-image: unset;
+      border-left: 1px solid red;
+      border-right: 1px solid red;
+      position: relative;
+      &:after {
+        content: url("../img/counter/menu_deco.png");
+        position: absolute;
+        left: 284px;
+        bottom: 114px;
+        z-index: -1;
+      }
     }
   }
   #menu1 {
+    position: relative;
+    @include pc {
+      margin-bottom: 47px;
+    }
     .left {
+      @include pc {
+        position: absolute;
+        right: -76px;
+      }
     }
     .right {
+      @include pc {
+      }
       .group {
         border-left: 2px solid #000;
         padding: 0 6%;
         @include pc {
-          padding: 0px 0px 0px 0px;
+          padding: 192px 0px 0px 50px;
         }
         h2 {
           width: 70%;
           margin: 6vw auto;
           @include pc {
             width: auto;
-            margin: 0px 0px 0px 0px;
+            margin: 0px 0px 43px 0px;
+          }
+        }
+        .p1 {
+          @include pc {
+            width: 480px;
           }
         }
       }
@@ -109,12 +155,15 @@ body {
       .p2 {
         margin: 6vw 6% 6vw 6%;
         @include pc {
-          margin: 0px 0px 0px 0px;
+          margin: 43px 0px 0px 50px;
         }
       }
     }
   }
   #menu2 {
+    @include pc {
+      justify-content: space-between;
+    }
     .left {
       position: relative;
       &:after {
@@ -128,6 +177,8 @@ body {
         z-index: -1;
       }
       @include pc {
+        margin-left: -67px;
+        margin-top: 8px;
         &:after {
           display: none;
         }
@@ -137,15 +188,67 @@ body {
       background: url("../img/counter/menu_bg.jpg") repeat top center;
       position: relative;
       @include pc {
-        padding: 0px 0px 0px 0px;
+        width: 450px;
+        padding: 75px 50px 100px 0px;
+        margin: 0px 0px 25px 0px;
+        box-sizing: border-box;
+        &:after {
+          content: "";
+          position: absolute;
+          left: -325px;
+          width: 325px;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+
+          background: url("../img/counter/menu_bg.jpg") repeat top center;
+        }
+        dl {
+          dt {
+            letter-spacing: 4px;
+            padding-left: 6px;
+          }
+          dd {
+            margin-right: -12px;
+          }
+        }
+        .menu-txt {
+          @include pc {
+            padding: 17px 0 0 22px;
+          }
+        }
       }
     }
   }
   .group-menu3-menu4 {
+    position: relative;
+    @include pc {
+      margin: 70px 0 0 -80px;
+      padding: 92px 0 129px 77px;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 925px;
+        background: url("../img/counter/menu_bg.jpg");
+        z-index: -1;
+      }
+    }
     .menu-img3 {
+      @include pc {
+        position: absolute;
+        right: -190px;
+        top: -42px;
+      }
     }
     .menu3 {
       background: url("../img/counter/menu_bg.jpg");
+      @include pc {
+        width: 408px;
+        background: unset;
+      }
 
       .icon_close {
         width: 15%;
@@ -153,24 +256,82 @@ body {
         padding: 4vw 0 12vw;
         @include pc {
           width: auto;
-          margin: 0px 0px 0px 0px;
+          margin: 76px 0px 55px 0px;
           padding: 0px 0px 0px 0px;
         }
       }
     }
+    .menu-img4 {
+      @include pc {
+        position: absolute;
+        right: -190px;
+        bottom: 49px;
+      }
+    }
     .menu4 {
       background: url("../img/counter/menu_bg.jpg");
+      @include pc {
+        width: 408px;
+        background: unset;
+      }
       .p1 {
       }
       .p2 {
       }
     }
   }
+  #menu5 {
+    @include pc {
+      align-items: center;
+      margin: 110px 0 0 0;
+    }
+    .left {
+      @include pc {
+        margin: 0px 0px 0px -252px;
+      }
+    }
+    .right {
+      @include pc {
+        width: 413px;
+        padding-left: 46px;
+      }
+    }
+  }
 
   .menu-slick {
+    @include pc {
+      margin: 161px 0 0 0px;
+      padding: 0px 0px 0px 0px;
+    }
     .slick-item {
+      .inner {
+        @include pc {
+          display: flex !important;
+          position: relative;
+          .order2-pc {
+            position: absolute;
+            right: -97px;
+            top: -40px;
+          }
+        }
+      }
+
       .menu-content {
         background: url("../img/counter/menu_bg.jpg");
+
+        @include pc {
+          background: unset;
+          padding: 75px 204px 55px 0px;
+          width: 572px;
+        }
+      }
+    }
+    .slick-list {
+      @include pc {
+        overflow: unset;
+        background: url("../img/counter/menu_bg.jpg");
+        margin: 0px 0px 0px -80px;
+        padding: 0px 0px 0px 80px;
       }
     }
     .slick-dots {
@@ -180,10 +341,17 @@ body {
       justify-content: center;
       z-index: 99;
       padding: 10px 0 15px;
+      @include pc {
+        padding: 20px 0 15px 90px;
+      }
       li {
         width: 15px;
         height: 15px;
         margin: 0 10px;
+        @include pc {
+          width: 20px;
+          height: 20px;
+        }
         button {
           width: 100%;
           height: 100%;
@@ -218,15 +386,66 @@ body {
       }
     }
   }
+  #menu8 {
+    margin-top: 10vw;
+    @include pc {
+      padding: 0 50px;
+      margin: 111px 0px 108px 0px;
+    }
+    .menu-content {
+      @include pc {
+        align-items: center;
+        margin-top: 52px;
+        dl {
+          width: 50%;
+          padding-right: 79px;
+          padding-top: 34px;
+          justify-content: space-between;
+        }
+        p {
+          width: 50%;
+          padding: 0 0px 0 16px;
+        }
+      }
+    }
+  }
+  #menu9 {
+    @include pc {
+      padding: 0px 0px 109px 142px;
+    }
+    .menu-img9 {
+      @include pc {
+        margin-right: 83px;
+      }
+    }
+    .menu-content {
+      dl {
+        dt {
+          margin: 16px auto 69px auto;
+          letter-spacing: 4px;
+        }
+      }
+      .menu-txt {
+        @include pc {
+          width: 118px;
+          height: 315px;
+          margin-right: 34px;
+          margin-top: 65px;
+        }
+      }
+    }
+  }
   .menu-btn {
     width: 80%;
     margin: 12vw auto;
     @include pc {
       width: auto;
       margin: 0px 0px 0px 0px;
+      text-align: center;
+      padding-bottom: 127px;
     }
     a {
-      display: block;
+      display: inline-block;
     }
   }
 }

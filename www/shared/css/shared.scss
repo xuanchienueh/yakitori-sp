@@ -145,11 +145,11 @@ img {
 }
 .flex-pc {
   @include pc {
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: flex !important;
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display: -o-flex !important;
   }
 }
 .d-block {

@@ -11,8 +11,26 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .order1-pc {
+    order: 1 !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .order2-pc {
+    order: 2 !important;
+  }
+}
+
 #lead {
   position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #lead {
+    height: 850px;
+    background: url("../img/counter/lead_bg.jpg") no-repeat top center/cover;
+  }
 }
 #lead:after {
   content: "";
@@ -21,7 +39,6 @@ body {
   height: 100px;
   left: 0;
   width: 100%;
-  background: red;
   background: url("../img/counter/lead_deco.png") no-repeat top center/100% auto;
 }
 #lead .lead-bg {
@@ -34,7 +51,10 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #lead .lead-content {
-    padding: 0px 0px 0px 0px;
+    padding: 140px 0px 0px 0px;
+    background: unset;
+    margin: 0px 0px 0px 60px;
+    width: 472px;
   }
 }
 #lead .lead-content h2 {
@@ -42,7 +62,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #lead .lead-content h2 {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 38px 0px;
   }
 }
 #lead .lead-content h2 img {
@@ -56,6 +76,12 @@ body {
     margin: 0px 0px 0px 0px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #lead .lead-content .lead-txt {
+    margin: 46px 0px 0px 0px;
+  }
+}
+
 #menu .menu-dt-dd {
   font-size: 6vw;
   line-height: 1.2;
@@ -64,6 +90,8 @@ body {
   #menu .menu-dt-dd {
     font-size: 36px;
     line-height: 32px;
+    margin: 0px 0px 31px 0px;
+    letter-spacing: 4px;
   }
 }
 #menu .menu-dl {
@@ -97,6 +125,30 @@ body {
 @media only screen and (min-width: 768px) {
   #menu .wrap {
     background-image: unset;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    position: relative;
+  }
+  #menu .wrap:after {
+    content: url("../img/counter/menu_deco.png");
+    position: absolute;
+    left: 284px;
+    bottom: 114px;
+    z-index: -1;
+  }
+}
+#menu #menu1 {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu1 {
+    margin-bottom: 47px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu1 .left {
+    position: absolute;
+    right: -76px;
   }
 }
 #menu #menu1 .right .group {
@@ -105,7 +157,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu1 .right .group {
-    padding: 0px 0px 0px 0px;
+    padding: 192px 0px 0px 50px;
   }
 }
 #menu #menu1 .right .group h2 {
@@ -115,7 +167,12 @@ body {
 @media only screen and (min-width: 768px) {
   #menu #menu1 .right .group h2 {
     width: auto;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 43px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu1 .right .group .p1 {
+    width: 480px;
   }
 }
 #menu #menu1 .right .p2 {
@@ -123,7 +180,12 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu1 .right .p2 {
-    margin: 0px 0px 0px 0px;
+    margin: 43px 0px 0px 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu2 {
+    justify-content: space-between;
   }
 }
 #menu #menu2 .left {
@@ -140,6 +202,10 @@ body {
   z-index: -1;
 }
 @media only screen and (min-width: 768px) {
+  #menu #menu2 .left {
+    margin-left: -67px;
+    margin-top: 8px;
+  }
   #menu #menu2 .left:after {
     display: none;
   }
@@ -150,11 +216,68 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu2 .right {
-    padding: 0px 0px 0px 0px;
+    width: 450px;
+    padding: 75px 50px 100px 0px;
+    margin: 0px 0px 25px 0px;
+    box-sizing: border-box;
+  }
+  #menu #menu2 .right:after {
+    content: "";
+    position: absolute;
+    left: -325px;
+    width: 325px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url("../img/counter/menu_bg.jpg") repeat top center;
+  }
+  #menu #menu2 .right dl dt {
+    letter-spacing: 4px;
+    padding-left: 6px;
+  }
+  #menu #menu2 .right dl dd {
+    margin-right: -12px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  #menu #menu2 .right .menu-txt {
+    padding: 17px 0 0 22px;
+  }
+}
+#menu .group-menu3-menu4 {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #menu .group-menu3-menu4 {
+    margin: 70px 0 0 -80px;
+    padding: 92px 0 129px 77px;
+  }
+  #menu .group-menu3-menu4:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 925px;
+    background: url("../img/counter/menu_bg.jpg");
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .group-menu3-menu4 .menu-img3 {
+    position: absolute;
+    right: -190px;
+    top: -42px;
   }
 }
 #menu .group-menu3-menu4 .menu3 {
   background: url("../img/counter/menu_bg.jpg");
+}
+@media only screen and (min-width: 768px) {
+  #menu .group-menu3-menu4 .menu3 {
+    width: 408px;
+    background: unset;
+  }
 }
 #menu .group-menu3-menu4 .menu3 .icon_close {
   width: 15%;
@@ -164,15 +287,77 @@ body {
 @media only screen and (min-width: 768px) {
   #menu .group-menu3-menu4 .menu3 .icon_close {
     width: auto;
-    margin: 0px 0px 0px 0px;
+    margin: 76px 0px 55px 0px;
     padding: 0px 0px 0px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .group-menu3-menu4 .menu-img4 {
+    position: absolute;
+    right: -190px;
+    bottom: 49px;
   }
 }
 #menu .group-menu3-menu4 .menu4 {
   background: url("../img/counter/menu_bg.jpg");
 }
+@media only screen and (min-width: 768px) {
+  #menu .group-menu3-menu4 .menu4 {
+    width: 408px;
+    background: unset;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu5 {
+    align-items: center;
+    margin: 110px 0 0 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu5 .left {
+    margin: 0px 0px 0px -252px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu5 .right {
+    width: 413px;
+    padding-left: 46px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-slick {
+    margin: 161px 0 0 0px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-slick .slick-item .inner {
+    display: flex !important;
+    position: relative;
+  }
+  #menu .menu-slick .slick-item .inner .order2-pc {
+    position: absolute;
+    right: -97px;
+    top: -40px;
+  }
+}
 #menu .menu-slick .slick-item .menu-content {
   background: url("../img/counter/menu_bg.jpg");
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-slick .slick-item .menu-content {
+    background: unset;
+    padding: 75px 204px 55px 0px;
+    width: 572px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-slick .slick-list {
+    overflow: unset;
+    background: url("../img/counter/menu_bg.jpg");
+    margin: 0px 0px 0px -80px;
+    padding: 0px 0px 0px 80px;
+  }
 }
 #menu .menu-slick .slick-dots {
   width: 100%;
@@ -182,10 +367,21 @@ body {
   z-index: 99;
   padding: 10px 0 15px;
 }
+@media only screen and (min-width: 768px) {
+  #menu .menu-slick .slick-dots {
+    padding: 20px 0 15px 90px;
+  }
+}
 #menu .menu-slick .slick-dots li {
   width: 15px;
   height: 15px;
   margin: 0 10px;
+}
+@media only screen and (min-width: 768px) {
+  #menu .menu-slick .slick-dots li {
+    width: 20px;
+    height: 20px;
+  }
 }
 #menu .menu-slick .slick-dots li button {
   width: 100%;
@@ -217,6 +413,53 @@ body {
 #menu .menu-slick .slick-arrow.slick-next {
   right: 0%;
 }
+#menu #menu8 {
+  margin-top: 10vw;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu8 {
+    padding: 0 50px;
+    margin: 111px 0px 108px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu8 .menu-content {
+    align-items: center;
+    margin-top: 52px;
+  }
+  #menu #menu8 .menu-content dl {
+    width: 50%;
+    padding-right: 79px;
+    padding-top: 34px;
+    justify-content: space-between;
+  }
+  #menu #menu8 .menu-content p {
+    width: 50%;
+    padding: 0 0px 0 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu9 {
+    padding: 0px 0px 109px 142px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu9 .menu-img9 {
+    margin-right: 83px;
+  }
+}
+#menu #menu9 .menu-content dl dt {
+  margin: 16px auto 69px auto;
+  letter-spacing: 4px;
+}
+@media only screen and (min-width: 768px) {
+  #menu #menu9 .menu-content .menu-txt {
+    width: 118px;
+    height: 315px;
+    margin-right: 34px;
+    margin-top: 65px;
+  }
+}
 #menu .menu-btn {
   width: 80%;
   margin: 12vw auto;
@@ -225,8 +468,10 @@ body {
   #menu .menu-btn {
     width: auto;
     margin: 0px 0px 0px 0px;
+    text-align: center;
+    padding-bottom: 127px;
   }
 }
 #menu .menu-btn a {
-  display: block;
+  display: inline-block;
 }/*# sourceMappingURL=counter.css.map */

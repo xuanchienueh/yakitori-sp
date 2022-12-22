@@ -158,10 +158,10 @@ img {
 
 @media only screen and (min-width: 768px) {
   .flex-pc {
-    display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    display: flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display: -o-flex !important;
   }
 }
 
