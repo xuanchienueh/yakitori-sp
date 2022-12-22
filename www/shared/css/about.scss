@@ -61,7 +61,7 @@ body {
   }
   .ingredients1 {
     position: relative;
-    padding: 0 6%;
+    padding: 0 5%;
     @include pc {
       padding: 95px 3px 75px;
       &::after {
@@ -96,14 +96,14 @@ body {
         }
 
         img {
-          width: 58%;
+          width: 75%;
         }
       }
     }
     .text {
       color: #5b5a56;
       @include pc {
-        width: 590px;
+        width: 600px;
       }
     }
   }
