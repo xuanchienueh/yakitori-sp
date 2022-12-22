@@ -9,6 +9,11 @@ body {
     background: url("../img/counter/bg.jpg") repeat top center;
   }
 }
+small {
+  @include pc {
+    font-size: 26px;
+  }
+}
 .order1-pc {
   @include pc {
     order: 1 !important;
@@ -102,14 +107,12 @@ body {
   }
 
   .wrap {
-    background: url("../img/counter/menu_deco.png") no-repeat bottom center/120% auto;
+    background: url(../img/counter/menu_deco.png) no-repeat bottom center/120% auto;
     @include pc {
       background-image: unset;
-      border-left: 1px solid red;
-      border-right: 1px solid red;
       position: relative;
       &:after {
-        content: url("../img/counter/menu_deco.png");
+        content: url(../img/counter/menu_deco.png);
         position: absolute;
         left: 284px;
         bottom: 114px;
@@ -273,10 +276,6 @@ body {
       @include pc {
         width: 408px;
         background: unset;
-      }
-      .p1 {
-      }
-      .p2 {
       }
     }
   }

@@ -12,6 +12,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  small {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .order1-pc {
     order: 1 !important;
   }
@@ -120,17 +126,15 @@ body {
   }
 }
 #menu .wrap {
-  background: url("../img/counter/menu_deco.png") no-repeat bottom center/120% auto;
+  background: url(../img/counter/menu_deco.png) no-repeat bottom center/120% auto;
 }
 @media only screen and (min-width: 768px) {
   #menu .wrap {
     background-image: unset;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
     position: relative;
   }
   #menu .wrap:after {
-    content: url("../img/counter/menu_deco.png");
+    content: url(../img/counter/menu_deco.png);
     position: absolute;
     left: 284px;
     bottom: 114px;
