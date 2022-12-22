@@ -8,6 +8,11 @@ body {
     background: url("../img/takeout/bg.jpg") repeat top center;
   }
 }
+small {
+  @include pc {
+    font-size: 26px;
+  }
+}
 #lead {
   padding: 12vw 0;
   @include pc {
@@ -367,6 +372,7 @@ body {
         h3 {
           font-weight: 600;
           margin: 0 0 5vw;
+          font-size: 5vw;
           @include pc {
             margin: -12px 16px 27px 0;
             font-size: 30px;
@@ -436,8 +442,7 @@ body {
         h4 {
           margin: 0 0 6vw;
         }
-        .sub-h4 {
-        }
+
         h5 {
           margin: 3vw 0;
           @include pc {
