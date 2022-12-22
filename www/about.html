@@ -175,7 +175,7 @@
                 <li><a href="index.html#floor">店内のご案内</a></li>
                 <li><a href="index.html#news">新着情報</a></li>
                 <li class="map">
-                  <a class="map" href="#"><img src="./shared/img/index/location.png" width="20" height="20" alt="icon-map" /> <span>MAP</span></a>
+                  <a class="map" target="_blank" href="https://goo.gl/maps/QP2DT4xyFh2EZfHk9"><img src="./shared/img/index/location.png" width="20" height="20" alt="icon-map" /> <span>MAP</span></a>
                 </li>
               </ul>
               <div class="img-tel">
@@ -238,7 +238,7 @@
             <li><a href="index.html#floor">店内のご案内</a></li>
             <li><a href="index.html#news">新着情報</a></li>
             <li>
-              <a class="map" href=""><img src="./shared/img/index/location.png" width="20" height="20" alt="location" /><span class="text-map">MAP</span></a>
+              <a class="map" target="_blank" href="https://goo.gl/maps/QP2DT4xyFh2EZfHk9"><img src="./shared/img/index/location.png" width="20" height="20" alt="location" /><span class="text-map">MAP</span></a>
             </li>
           </ul>
 
@@ -491,15 +491,21 @@
         </div>
         <div class="nav-fixed">
           <ul id="ft_fixed" class="d-flex">
-            <li><a href="#"></a><img src="./shared/img/index/header_fix_btn1.jpg" width="148" height="113" alt="080-3624-7811" /></li>
             <li>
-              <a href="#"><img src="./shared/img/index/header_fix_btn2.jpg" width="150" height="113" alt="map" /></a>
+              <a href="tel:08036247811" class="telhref" onClick="gtag('event','click',{'event_category':'tel','event_label':'fix_phone'});">
+                <img src="./shared/img/index/header_fix_btn1.jpg" width="148" height="113" alt="080-3624-7811" />
+              </a>
             </li>
             <li>
-              <a href="#"><img src="./shared/img/index/header_fix_bnt3.jpg" width="150" height="113" alt="WEB予約" /></a>
+              <a href="https://goo.gl/maps/QP2DT4xyFh2EZfHk9" target="_blank" rel="nofollow" onclick="gtag('event','click',{'event_category':'Links','event_label':'fixed_map'});"
+                ><img src="./shared/img/index/header_fix_btn2.jpg" width="150" height="113" alt="map"
+              /></a>
             </li>
             <li>
-              <a href="#"><img src="./shared/img/index/header_fix_btn4.jpg" width="300" height="113" alt="テイクアウト" /></a>
+              <a href="#" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'fixed_reserve'});"><img src="./shared/img/index/header_fix_bnt3.jpg" width="150" height="113" alt="WEB予約" /></a>
+            </li>
+            <li>
+              <a href="takeout.html"><img src="./shared/img/index/header_fix_btn4.jpg" width="300" height="113" alt="テイクアウト" /></a>
             </li>
           </ul>
         </div>
@@ -558,10 +564,7 @@
           ],
         });
         $(window).on("load resize orientationchange", function () {
-          $(".key-slide").slick("resize");
-        });
-        $(".js-touch").on("touchend touchcancel touchmove", function () {
-          $(this).slick("slickPlay");
+          $(".flow-slide").slick("resize");
         });
       });
     </script>
