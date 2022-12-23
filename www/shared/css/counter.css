@@ -189,11 +189,8 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu2 {
-    justify-content: space-between;
+    position: relative;
   }
-}
-#menu #menu2 .left {
-  position: relative;
 }
 #menu #menu2 .left:after {
   content: "";
@@ -207,8 +204,10 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu2 .left {
-    margin-left: -67px;
-    margin-top: 8px;
+    position: absolute;
+    left: -69px;
+    top: -34px;
+    z-index: 1;
   }
   #menu #menu2 .left:after {
     display: none;
@@ -220,24 +219,16 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu2 .right {
-    width: 450px;
-    padding: 75px 50px 100px 0px;
-    margin: 0px 0px 25px 0px;
+    width: 760px;
+    padding: 80px 50px 65px 340px;
+    margin: 0px 0px 25px auto;
     box-sizing: border-box;
-  }
-  #menu #menu2 .right:after {
-    content: "";
-    position: absolute;
-    left: -325px;
-    width: 325px;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
     background: url("../img/counter/menu_bg.jpg") repeat top center;
   }
   #menu #menu2 .right dl dt {
     letter-spacing: 4px;
     padding-left: 6px;
+    margin: 0px 0px 28px 0px;
   }
   #menu #menu2 .right dl dd {
     margin-right: -12px;
@@ -253,8 +244,8 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu .group-menu3-menu4 {
-    margin: 70px 0 0 -80px;
-    padding: 92px 0 129px 77px;
+    margin: 122px 0 0 -80px;
+    padding: 97px 0 129px 77px;
   }
   #menu .group-menu3-menu4:after {
     content: "";
@@ -291,7 +282,7 @@ body {
 @media only screen and (min-width: 768px) {
   #menu .group-menu3-menu4 .menu3 .icon_close {
     width: auto;
-    margin: 76px 0px 55px 0px;
+    margin: 76px -12px 55px 0px;
     padding: 0px 0px 0px 0px;
   }
 }
@@ -313,7 +304,6 @@ body {
 }
 @media only screen and (min-width: 768px) {
   #menu #menu5 {
-    align-items: center;
     margin: 110px 0 0 0;
   }
 }
@@ -326,7 +316,11 @@ body {
   #menu #menu5 .right {
     width: 413px;
     padding-left: 46px;
+    padding-top: 99px;
   }
+}
+#menu #menu5 .right dl dt {
+  line-height: 52px;
 }
 @media only screen and (min-width: 768px) {
   #menu .menu-slick {

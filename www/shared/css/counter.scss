@@ -4,447 +4,445 @@
 *=============================================*/
 @import "global";
 body {
-  background: url("../img/counter/bg_sp.jpg") repeat top center;
-  @include pc {
-    background: url("../img/counter/bg.jpg") repeat top center;
-  }
+	background: url("../img/counter/bg_sp.jpg") repeat top center;
+	@include pc {
+		background: url("../img/counter/bg.jpg") repeat top center;
+	}
 }
 small {
-  @include pc {
-    font-size: 26px;
-  }
+	@include pc {
+		font-size: 26px;
+	}
 }
 .order1-pc {
-  @include pc {
-    order: 1 !important;
-  }
+	@include pc {
+		order: 1 !important;
+	}
 }
 .order2-pc {
-  @include pc {
-    order: 2 !important;
-  }
+	@include pc {
+		order: 2 !important;
+	}
 }
 #lead {
-  position: relative;
-  @include pc {
-    height: 850px;
-    background: url("../img/counter/lead_bg.jpg") no-repeat top center/cover;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    height: 100px;
-    left: 0;
-    width: 100%;
-    background: url("../img/counter/lead_deco.png") no-repeat top center/100% auto;
-  }
-  .lead-bg {
-    position: relative;
-  }
+	position: relative;
+	@include pc {
+		height: 850px;
+		background: url("../img/counter/lead_bg.jpg") no-repeat top center/cover;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -100px;
+		height: 100px;
+		left: 0;
+		width: 100%;
+		background: url("../img/counter/lead_deco.png") no-repeat top center/100% auto;
+	}
+	.lead-bg {
+		position: relative;
+	}
 
-  .lead-content {
-    background: #000;
-    color: #c3c3c1;
-    padding: 1vw 6% 9vw;
-    @include pc {
-      padding: 140px 0px 0px 0px;
-      background: unset;
-      margin: 0px 0px 0px 60px;
-      width: 472px;
-    }
-    h2 {
-      margin: 0 0 9vw;
-      @include pc {
-        margin: 0px 0px 38px 0px;
-      }
-      img {
-        width: 70%;
-        margin: 0 auto;
-        display: block;
-        @include pc {
-          width: auto;
-          margin: 0px 0px 0px 0px;
-        }
-      }
-    }
-    .lead-txt {
-      @include pc {
-        margin: 46px 0px 0px 0px;
-      }
-    }
-  }
+	.lead-content {
+		background: #000;
+		color: #c3c3c1;
+		padding: 1vw 6% 9vw;
+		@include pc {
+			padding: 140px 0px 0px 0px;
+			background: unset;
+			margin: 0px 0px 0px 60px;
+			width: 472px;
+		}
+		h2 {
+			margin: 0 0 9vw;
+			@include pc {
+				margin: 0px 0px 38px 0px;
+			}
+			img {
+				width: 70%;
+				margin: 0 auto;
+				display: block;
+				@include pc {
+					width: auto;
+					margin: 0px 0px 0px 0px;
+				}
+			}
+		}
+		.lead-txt {
+			@include pc {
+				margin: 46px 0px 0px 0px;
+			}
+		}
+	}
 }
 #menu {
-  .menu-dt-dd {
-    font-size: 6vw;
-    line-height: 1.2;
-    @include pc {
-      font-size: 36px;
-      line-height: 32px;
-      margin: 0px 0px 31px 0px;
-      letter-spacing: 4px;
-    }
-  }
-  .menu-dl {
-    padding: 6vw 0 0 0;
-    @include pc {
-      padding: 0px 0px 0px 0px;
-    }
-  }
-  .menu-txt {
-    color: #5b5a56;
-    padding: 6vw 0;
-    @include pc {
-      padding: 0px 0px 0px 0px;
-    }
-  }
-  .menu-content {
-    padding: 0 6%;
-    @include pc {
-      padding: 0px 0px 0px 0px;
-    }
-  }
+	.menu-dt-dd {
+		font-size: 6vw;
+		line-height: 1.2;
+		@include pc {
+			font-size: 36px;
+			line-height: 32px;
+			margin: 0px 0px 31px 0px;
+			letter-spacing: 4px;
+		}
+	}
+	.menu-dl {
+		padding: 6vw 0 0 0;
+		@include pc {
+			padding: 0px 0px 0px 0px;
+		}
+	}
+	.menu-txt {
+		color: #5b5a56;
+		padding: 6vw 0;
+		@include pc {
+			padding: 0px 0px 0px 0px;
+		}
+	}
+	.menu-content {
+		padding: 0 6%;
+		@include pc {
+			padding: 0px 0px 0px 0px;
+		}
+	}
 
-  .wrap {
-    background: url(../img/counter/menu_deco.png) no-repeat bottom center/120% auto;
-    @include pc {
-      background-image: unset;
-      position: relative;
-      &:after {
-        content: url(../img/counter/menu_deco.png);
-        position: absolute;
-        left: 284px;
-        bottom: 114px;
-        z-index: -1;
-      }
-    }
-  }
-  #menu1 {
-    position: relative;
-    @include pc {
-      margin-bottom: 47px;
-    }
-    .left {
-      @include pc {
-        position: absolute;
-        right: -76px;
-      }
-    }
-    .right {
-      @include pc {
-      }
-      .group {
-        border-left: 2px solid #000;
-        padding: 0 6%;
-        @include pc {
-          padding: 192px 0px 0px 50px;
-        }
-        h2 {
-          width: 70%;
-          margin: 6vw auto;
-          @include pc {
-            width: auto;
-            margin: 0px 0px 43px 0px;
-          }
-        }
-        .p1 {
-          @include pc {
-            width: 480px;
-          }
-        }
-      }
+	.wrap {
+		background: url(../img/counter/menu_deco.png) no-repeat bottom center/120% auto;
+		@include pc {
+			background-image: unset;
+			position: relative;
+			&:after {
+				content: url(../img/counter/menu_deco.png);
+				position: absolute;
+				left: 284px;
+				bottom: 114px;
+				z-index: -1;
+			}
+		}
+	}
+	#menu1 {
+		position: relative;
+		@include pc {
+			margin-bottom: 47px;
+		}
+		.left {
+			@include pc {
+				position: absolute;
+				right: -76px;
+			}
+		}
+		.right {
+			@include pc {
+			}
+			.group {
+				border-left: 2px solid #000;
+				padding: 0 6%;
+				@include pc {
+					padding: 192px 0px 0px 50px;
+				}
+				h2 {
+					width: 70%;
+					margin: 6vw auto;
+					@include pc {
+						width: auto;
+						margin: 0px 0px 43px 0px;
+					}
+				}
+				.p1 {
+					@include pc {
+						width: 480px;
+					}
+				}
+			}
 
-      .p2 {
-        margin: 6vw 6% 6vw 6%;
-        @include pc {
-          margin: 43px 0px 0px 50px;
-        }
-      }
-    }
-  }
-  #menu2 {
-    @include pc {
-      justify-content: space-between;
-    }
-    .left {
-      position: relative;
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 50%;
-        background: url("../img/counter/menu_bg.jpg") repeat top center;
-        z-index: -1;
-      }
-      @include pc {
-        margin-left: -67px;
-        margin-top: 8px;
-        &:after {
-          display: none;
-        }
-      }
-    }
-    .right {
-      background: url("../img/counter/menu_bg.jpg") repeat top center;
-      position: relative;
-      @include pc {
-        width: 450px;
-        padding: 75px 50px 100px 0px;
-        margin: 0px 0px 25px 0px;
-        box-sizing: border-box;
-        &:after {
-          content: "";
-          position: absolute;
-          left: -325px;
-          width: 325px;
-          top: 0;
-          bottom: 0;
-          z-index: -1;
+			.p2 {
+				margin: 6vw 6% 6vw 6%;
+				@include pc {
+					margin: 43px 0px 0px 50px;
+				}
+			}
+		}
+	}
+	#menu2 {
+		@include pc {
+			position: relative;
+		}
+		.left {
+			// position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 50%;
+				background: url("../img/counter/menu_bg.jpg") repeat top center;
+				z-index: -1;
+			}
+			@include pc {
+				position: absolute;
+				left: -69px;
+				top: -34px;
+				z-index: 1;
+				&:after {
+					display: none;
+				}
+			}
+		}
+		.right {
+			background: url("../img/counter/menu_bg.jpg") repeat top center;
+			position: relative;
+			@include pc {
+				width: 760px;
+				padding: 80px 50px 65px 340px;
+				margin: 0px 0px 25px auto;
+				box-sizing: border-box;
+				background: url("../img/counter/menu_bg.jpg") repeat top center;
 
-          background: url("../img/counter/menu_bg.jpg") repeat top center;
-        }
-        dl {
-          dt {
-            letter-spacing: 4px;
-            padding-left: 6px;
-          }
-          dd {
-            margin-right: -12px;
-          }
-        }
-        .menu-txt {
-          @include pc {
-            padding: 17px 0 0 22px;
-          }
-        }
-      }
-    }
-  }
-  .group-menu3-menu4 {
-    position: relative;
-    @include pc {
-      margin: 70px 0 0 -80px;
-      padding: 92px 0 129px 77px;
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 925px;
-        background: url("../img/counter/menu_bg.jpg");
-        z-index: -1;
-      }
-    }
-    .menu-img3 {
-      @include pc {
-        position: absolute;
-        right: -190px;
-        top: -42px;
-      }
-    }
-    .menu3 {
-      background: url("../img/counter/menu_bg.jpg");
-      @include pc {
-        width: 408px;
-        background: unset;
-      }
+				dl {
+					dt {
+						letter-spacing: 4px;
+						padding-left: 6px;
+						margin: 0px 0px 28px 0px;
+					}
+					dd {
+						margin-right: -12px;
+					}
+				}
+				.menu-txt {
+					@include pc {
+						padding: 17px 0 0 22px;
+					}
+				}
+			}
+		}
+	}
+	.group-menu3-menu4 {
+		position: relative;
+		@include pc {
+			margin: 122px 0 0 -80px;
+			padding: 97px 0 129px 77px;
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 925px;
+				background: url("../img/counter/menu_bg.jpg");
+				z-index: -1;
+			}
+		}
+		.menu-img3 {
+			@include pc {
+				position: absolute;
+				right: -190px;
+				top: -42px;
+			}
+		}
+		.menu3 {
+			background: url("../img/counter/menu_bg.jpg");
+			@include pc {
+				width: 408px;
+				background: unset;
+			}
 
-      .icon_close {
-        width: 15%;
-        margin: 0 auto;
-        padding: 4vw 0 12vw;
-        @include pc {
-          width: auto;
-          margin: 76px 0px 55px 0px;
-          padding: 0px 0px 0px 0px;
-        }
-      }
-    }
-    .menu-img4 {
-      @include pc {
-        position: absolute;
-        right: -190px;
-        bottom: 49px;
-      }
-    }
-    .menu4 {
-      background: url("../img/counter/menu_bg.jpg");
-      @include pc {
-        width: 408px;
-        background: unset;
-      }
-    }
-  }
-  #menu5 {
-    @include pc {
-      align-items: center;
-      margin: 110px 0 0 0;
-    }
-    .left {
-      @include pc {
-        margin: 0px 0px 0px -252px;
-      }
-    }
-    .right {
-      @include pc {
-        width: 413px;
-        padding-left: 46px;
-      }
-    }
-  }
+			.icon_close {
+				width: 15%;
+				margin: 0 auto;
+				padding: 4vw 0 12vw;
+				@include pc {
+					width: auto;
+					margin: 76px -12px 55px 0px;
+					padding: 0px 0px 0px 0px;
+				}
+			}
+		}
+		.menu-img4 {
+			@include pc {
+				position: absolute;
+				right: -190px;
+				bottom: 49px;
+			}
+		}
+		.menu4 {
+			background: url("../img/counter/menu_bg.jpg");
+			@include pc {
+				width: 408px;
+				background: unset;
+			}
+		}
+	}
+	#menu5 {
+		@include pc {
+			margin: 110px 0 0 0;
+		}
+		.left {
+			@include pc {
+				margin: 0px 0px 0px -252px;
+			}
+		}
+		.right {
+			@include pc {
+				width: 413px;
+				padding-left: 46px;
+				padding-top: 99px;
+			}
+			dl {
+				dt {
+					line-height: 52px;
+				}
+			}
+		}
+	}
 
-  .menu-slick {
-    @include pc {
-      margin: 161px 0 0 0px;
-      padding: 0px 0px 0px 0px;
-    }
-    .slick-item {
-      .inner {
-        @include pc {
-          display: flex !important;
-          position: relative;
-          .order2-pc {
-            position: absolute;
-            right: -97px;
-            top: -40px;
-          }
-        }
-      }
+	.menu-slick {
+		@include pc {
+			margin: 161px 0 0 0px;
+			padding: 0px 0px 0px 0px;
+		}
+		.slick-item {
+			.inner {
+				@include pc {
+					display: flex !important;
+					position: relative;
+					.order2-pc {
+						position: absolute;
+						right: -97px;
+						top: -40px;
+					}
+				}
+			}
 
-      .menu-content {
-        background: url("../img/counter/menu_bg.jpg");
+			.menu-content {
+				background: url("../img/counter/menu_bg.jpg");
+				@include pc {
+					background: unset;
+					padding: 75px 204px 55px 0px;
+					width: 572px;
+				}
+			}
+		}
+		.slick-list {
+			@include pc {
+				overflow: unset;
+				background: url("../img/counter/menu_bg.jpg");
+				margin: 0px 0px 0px -80px;
+				padding: 0px 0px 0px 80px;
+			}
+		}
+		.slick-dots {
+			width: 100%;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			z-index: 99;
+			padding: 10px 0 15px;
+			@include pc {
+				padding: 20px 0 15px 90px;
+			}
+			li {
+				width: 15px;
+				height: 15px;
+				margin: 0 10px;
+				@include pc {
+					width: 20px;
+					height: 20px;
+				}
+				button {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					border: none;
+					background: #646464;
+					text-indent: -9999px;
+					cursor: pointer;
+				}
+				&.slick-active button {
+					background: #000;
+				}
+			}
+		}
 
-        @include pc {
-          background: unset;
-          padding: 75px 204px 55px 0px;
-          width: 572px;
-        }
-      }
-    }
-    .slick-list {
-      @include pc {
-        overflow: unset;
-        background: url("../img/counter/menu_bg.jpg");
-        margin: 0px 0px 0px -80px;
-        padding: 0px 0px 0px 80px;
-      }
-    }
-    .slick-dots {
-      width: 100%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      z-index: 99;
-      padding: 10px 0 15px;
-      @include pc {
-        padding: 20px 0 15px 90px;
-      }
-      li {
-        width: 15px;
-        height: 15px;
-        margin: 0 10px;
-        @include pc {
-          width: 20px;
-          height: 20px;
-        }
-        button {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          border: none;
-          background: #646464;
-          text-indent: -9999px;
-          cursor: pointer;
-        }
-        &.slick-active button {
-          background: #000;
-        }
-      }
-    }
-
-    .slick-arrow {
-      position: absolute;
-      top: 0;
-      width: calc(50% - 500px);
-      height: 100%;
-      background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
-      border: none !important;
-      text-indent: -9999px;
-      z-index: 99;
-      cursor: pointer;
-      &.slick-prev {
-        left: 0%;
-        background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
-      }
-      &.slick-next {
-        right: 0%;
-      }
-    }
-  }
-  #menu8 {
-    margin-top: 10vw;
-    @include pc {
-      padding: 0 50px;
-      margin: 111px 0px 108px 0px;
-    }
-    .menu-content {
-      @include pc {
-        align-items: center;
-        margin-top: 52px;
-        dl {
-          width: 50%;
-          padding-right: 79px;
-          padding-top: 34px;
-          justify-content: space-between;
-        }
-        p {
-          width: 50%;
-          padding: 0 0px 0 16px;
-        }
-      }
-    }
-  }
-  #menu9 {
-    @include pc {
-      padding: 0px 0px 109px 142px;
-    }
-    .menu-img9 {
-      @include pc {
-        margin-right: 83px;
-      }
-    }
-    .menu-content {
-      dl {
-        dt {
-          margin: 16px auto 69px auto;
-          letter-spacing: 4px;
-        }
-      }
-      .menu-txt {
-        @include pc {
-          width: 118px;
-          height: 315px;
-          margin-right: 34px;
-          margin-top: 65px;
-        }
-      }
-    }
-  }
-  .menu-btn {
-    width: 80%;
-    margin: 12vw auto;
-    @include pc {
-      width: auto;
-      margin: 0px 0px 0px 0px;
-      text-align: center;
-      padding-bottom: 127px;
-    }
-    a {
-      display: inline-block;
-    }
-  }
+		.slick-arrow {
+			position: absolute;
+			top: 0;
+			width: calc(50% - 500px);
+			height: 100%;
+			background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
+			border: none !important;
+			text-indent: -9999px;
+			z-index: 99;
+			cursor: pointer;
+			&.slick-prev {
+				left: 0%;
+				background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
+			}
+			&.slick-next {
+				right: 0%;
+			}
+		}
+	}
+	#menu8 {
+		margin-top: 10vw;
+		@include pc {
+			padding: 0 50px;
+			margin: 111px 0px 108px 0px;
+		}
+		.menu-content {
+			@include pc {
+				align-items: center;
+				margin-top: 52px;
+				dl {
+					width: 50%;
+					padding-right: 79px;
+					padding-top: 34px;
+					justify-content: space-between;
+				}
+				p {
+					width: 50%;
+					padding: 0 0px 0 16px;
+				}
+			}
+		}
+	}
+	#menu9 {
+		@include pc {
+			padding: 0px 0px 109px 142px;
+		}
+		.menu-img9 {
+			@include pc {
+				margin-right: 83px;
+			}
+		}
+		.menu-content {
+			dl {
+				dt {
+					margin: 16px auto 69px auto;
+					letter-spacing: 4px;
+				}
+			}
+			.menu-txt {
+				@include pc {
+					width: 118px;
+					height: 315px;
+					margin-right: 34px;
+					margin-top: 65px;
+				}
+			}
+		}
+	}
+	.menu-btn {
+		width: 80%;
+		margin: 12vw auto;
+		@include pc {
+			width: auto;
+			margin: 0px 0px 0px 0px;
+			text-align: center;
+			padding-bottom: 127px;
+		}
+		a {
+			display: inline-block;
+		}
+	}
 }
