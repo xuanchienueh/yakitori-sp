@@ -68,7 +68,7 @@ body {
 }
 #ingredients .ingredients1 {
   position: relative;
-  padding: 0 6%;
+  padding: 0 5%;
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients1 {
@@ -110,14 +110,14 @@ body {
   }
 }
 #ingredients .ingredients1 .content .ingredients_img2 img {
-  width: 58%;
+  width: 75%;
 }
 #ingredients .ingredients1 .text {
   color: #5b5a56;
 }
 @media only screen and (min-width: 768px) {
   #ingredients .ingredients1 .text {
-    width: 590px;
+    width: 600px;
   }
 }
 #ingredients .ingredients2 {

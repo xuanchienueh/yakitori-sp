@@ -8,6 +8,12 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  small {
+    font-size: 26px;
+  }
+}
+
 #lead {
   padding: 12vw 0;
 }
@@ -424,6 +430,7 @@
 #flow #flow1 .flow1-content .right h3 {
   font-weight: 600;
   margin: 0 0 5vw;
+  font-size: 5vw;
 }
 @media only screen and (min-width: 768px) {
   #flow #flow1 .flow1-content .right h3 {

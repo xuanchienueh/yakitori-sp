@@ -541,8 +541,8 @@ header .header-right-pc .menu-social .menu li a {
     height: auto;
     left: auto;
     right: 0;
-    top: 25% !important;
-    transform: translateY(-25%);
+    top: 50% !important;
+    transform: translateY(-50%);
     display: none !important;
   }
   .nav-fixed.right.pc a {
@@ -597,6 +597,7 @@ header .header-right-pc .menu-social .menu li a {
 }
 #menu_toggle .menu2 {
   margin-top: 4vw;
+  text-align: center;
 }
 #menu_toggle .menu2 li.active {
   background: #161515;
@@ -604,6 +605,7 @@ header .header-right-pc .menu-social .menu li a {
 }
 #menu_toggle .menu2 li a {
   padding: 3vw 0;
+  display: block;
 }
 #menu_toggle .menu3 {
   border-top: 1px solid #606060;
@@ -914,6 +916,7 @@ footer .nav-fixed {
   left: 0;
   right: 0;
   height: auto;
+  z-index: 99;
 }
 footer .nav-fixed #ft_fixed {
   background: #edece7;
