@@ -16,6 +16,7 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+            padding: 0px 0px 0px 0px;
       }
       .wrap {
             @include pc {
@@ -24,13 +25,13 @@
             }
       }
       h2 {
-            font-size: 6vw;
+            font-size: 6vw; 
             font-weight: 600;
             line-height: 3.1;
             color: $text-color;
             @include pc {
                   font-size: 18px;
-                  width: 50%;
+                  width: 25%;
                   letter-spacing: 1.4px;
             }
       }
@@ -52,15 +53,21 @@
                   }
                   .left {
                         margin-right: 5%;
-                        width: 76%;
+                        width: 48% ;
+                        height: 36.6% ;
+                        display: block;
                         @include pc {
                               margin-right: 15px;
-                              width: 134%;
+                              width: auto;
+                              height: auto;
                         }
                   }
                   .right {
                         line-height: 1.4;
                         margin-left: -1%;
+                        a { 
+                              display: block;
+                        }
                   }
             }
       }
